@@ -5,3 +5,4 @@ show_downloads: false
 remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-include-cache
+show_title: false
