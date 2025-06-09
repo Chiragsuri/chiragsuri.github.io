@@ -1,5 +1,3 @@
-# Data Analyst
-
 #### Technical Skills: Excel, Tableau, Python, Jupyter Notebook, MySQL, PowerBI, JavaScript, C++, React, Bootstrap
 
 ## Education
