@@ -3,3 +3,4 @@ logo: docs/assets/Chirag_Pic.png
 #description: Test Text
 show_downloads: false
 theme: minimal-mistakes-jekyll
+remote_theme: mistakes/minimal-mistakes
