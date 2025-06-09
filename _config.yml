@@ -72,7 +72,7 @@ author:
       icon: "fab fa-fw fa-link"
       url: "https://leetcode.com/chiragsuri/"
     - label: "GFG"
-      icon: "fab fa-fw fa-link"
+      icon: "fa fa-google"
       url: "https://auth.geeksforgeeks.org/user/chiragsuri/practice/"
 
 footer:
