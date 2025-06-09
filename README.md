@@ -3,8 +3,8 @@
 #### Technical Skills: Excel, Tableau, Python, Jupyter Notebook, MySQL, PowerBI, JavaScript, C++, React, Bootstrap
 
 ## Education
-- B.E., Electronics and Communication Engineering (ECE) | UIET, Panjab University, Chandigarh (_2024_) | CGPA: 8.59								       		
-- Class 12th | Govt. Model Sr. Sec. School, Chandigarh (_2020_)	| Percentage: 92.8			        		
+- B.E., Electronics and Communication Engineering (ECE) | UIET, Panjab University, Chandigarh (_2024_)      | CGPA (_8.59_)								       		
+- Class 12th                                            | Govt. Model Sr. Sec. School, Chandigarh (_2020_)	| Percentage (_92.8_)			        		
 
 ## Work Experience
 **Junior Research Analyst @ GreyB Research Pvt. Ltd. (_Jan 2024 - June 2024_)**
