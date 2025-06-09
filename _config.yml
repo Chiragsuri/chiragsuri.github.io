@@ -1,5 +1,5 @@
 title: Chirag Suri
 logo: docs/assets/Chirag_Pic.png
-description: Test Text
-show_downloads: true
+#description: Test Text
+show_downloads: false
 theme: jekyll-theme-minimal
