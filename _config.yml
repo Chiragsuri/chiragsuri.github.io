@@ -96,6 +96,8 @@ defaults:
       comments: true
       share: true
       related: true
+      header:
+        anchor: false
   # _pages
   - scope:
       path: "_pages"
@@ -103,6 +105,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      header:
+        anchor: false #for disabling perma links to every header present in text
 
 category_archive:
   type: liquid
