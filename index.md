@@ -3,8 +3,10 @@
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: single
-author_profile: false
+author_profile: true
 ---
+#
+
 # Data Analyst
 #### Technical Skills: Excel, Tableau, Python, Jupyter Notebook, MySQL, PowerBI, JavaScript, C++, React, Bootstrap
 
