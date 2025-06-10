@@ -5,55 +5,56 @@
 layout: single
 author_profile: true
 ---
+<h1 style="margin-top: 2rem; color: #ffffff;">Data Analyst</h1>
 
-<h2 style="margin-top: 2rem;">Skills</h2>
+<h2 style="margin-top: 2rem; color: #ffffff;">Skills</h2>
 
 <div style="
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
   font-family: system-ui, sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.9rem;
+  line-height: 1.5;
 ">
 
-  <div style="padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <strong style="display: block; margin-bottom: 8px;">📥 Data Collection & Querying</strong>
+  <div style="padding: 12px; background-color: #1e1e1e; color: #f0f0f0; border-radius: 6px; border: 1px solid #333;">
+    <strong style="display: block; margin-bottom: 6px;">📥 Data Collection & Querying</strong>
     MySQL, Excel
   </div>
 
-  <div style="padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <strong style="display: block; margin-bottom: 8px;">🧹 Data Cleaning & Validation</strong>
+  <div style="padding: 12px; background-color: #1e1e1e; color: #f0f0f0; border-radius: 6px; border: 1px solid #333;">
+    <strong style="display: block; margin-bottom: 6px;">🧹 Data Cleaning & Validation</strong>
     Pandas, NumPy, Excel
   </div>
 
-  <div style="padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <strong style="display: block; margin-bottom: 8px;">📊 Data Analysis & Manipulation</strong>
+  <div style="padding: 12px; background-color: #1e1e1e; color: #f0f0f0; border-radius: 6px; border: 1px solid #333;">
+    <strong style="display: block; margin-bottom: 6px;">📊 Analysis & Manipulation</strong>
     Python, Jupyter Notebook, Pandas, NumPy
   </div>
 
-  <div style="padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <strong style="display: block; margin-bottom: 8px;">📈 Data Visualization</strong>
+  <div style="padding: 12px; background-color: #1e1e1e; color: #f0f0f0; border-radius: 6px; border: 1px solid #333;">
+    <strong style="display: block; margin-bottom: 6px;">📈 Visualization</strong>
     Tableau, Power BI, Matplotlib, Seaborn
   </div>
 
-  <div style="padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <strong style="display: block; margin-bottom: 8px;">🤖 Machine Learning</strong>
+  <div style="padding: 12px; background-color: #1e1e1e; color: #f0f0f0; border-radius: 6px; border: 1px solid #333;">
+    <strong style="display: block; margin-bottom: 6px;">🤖 Machine Learning</strong>
     Scikit-learn (sklearn)
   </div>
 
-  <div style="padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <strong style="display: block; margin-bottom: 8px;">🛠️ Tools & Platforms</strong>
-    Jupyter Notebook, Git/GitHub, Excel
+  <div style="padding: 12px; background-color: #1e1e1e; color: #f0f0f0; border-radius: 6px; border: 1px solid #333;">
+    <strong style="display: block; margin-bottom: 6px;">🛠️ Tools & Platforms</strong>
+    Git/GitHub, Excel, Jupyter Notebook
   </div>
 
-  <div style="padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <strong style="display: block; margin-bottom: 8px;">💡 Soft Skills</strong>
+  <div style="padding: 12px; background-color: #1e1e1e; color: #f0f0f0; border-radius: 6px; border: 1px solid #333;">
+    <strong style="display: block; margin-bottom: 6px;">💡 Soft Skills</strong>
     Analytical Thinking, Problem Solving, Adaptability, Communication, Team Work, Attention to Detail
   </div>
 
-  <div style="padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.05);">
-    <strong style="display: block; margin-bottom: 8px;">🌐 Languages</strong>
+  <div style="padding: 12px; background-color: #1e1e1e; color: #f0f0f0; border-radius: 6px; border: 1px solid #333;">
+    <strong style="display: block; margin-bottom: 6px;">🌐 Languages</strong>
     English, Hindi
   </div>
 
