@@ -4,6 +4,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: single
 author_profile: true
+classes: wide
 ---
 <h1 style="margin-top: 2rem; color: #ffffff;">Data Analyst</h1>
 
@@ -68,25 +69,43 @@ author_profile: true
 | Class 12th                                   | Govt. Model Sr. Sec. School, Chandigarh       | 2020      | 92.8%         |
        		
 
-## Work Experience
-**Junior Research Analyst @ GreyB Research Pvt. Ltd. (_Jan 2024 - June 2024_)**
-- Performed thorough prior art searches using various databases and tools, including Derwent and Orbit, to find relevant patents and literature.
-- Compiled detailed search reports with key insights and critical references, helping evaluate patentability and freedom-to-operate effectively.
-- Achieved Certification as a specialist-level patent analyst.
+## 🔧 Work Experience
 
-## Projects
-### House Sales Analysis Dashboard
-[Tableau](https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales)
+### **Junior Research Analyst**  
+**GreyB Research Pvt. Ltd.**  
+*Jan 2024 – June 2024*
 
-Designed a sample House Sales Data Analysis Dashboard with built-in filters to visualize and analyze sales trends, demographics, and various influencing factors, making it ideal for conducting comprehensive sales data analysis.
+- 🔍 Conducted in-depth **prior art searches** using Derwent and Orbit across global patent and technical databases.
+- 📝 Delivered **comprehensive search reports** highlighting key insights, claim charts, and critical prior references to support legal and R&D teams.
+- ✅ Contributed to **patentability**, **invalidity**, and **freedom-to-operate (FTO)** assessments, enabling informed IP decisions.
+- 🏅 **Certified as a Specialist-level Patent Analyst** for exceeding quality and speed benchmarks.
 
-![](/docs/assets/HouseSales.png)
 
-### Football-Stricker-Performance
-[Github](https://github.com/Chiragsuri/Football-Stricker-Performance)
 
-Build an interactive dashboard to analyze and classify 500 professional football strikers based on performance and personal attributes. Utilized Power BI for creating KPI analysis, Comparison Analysis charts and tables and used a custom tooltip for in-depth analysis. Also employed Excel for data preprocessing and analysis.
+## 🚀 Projects
 
-![](/docs/assets/FSPKPI.png)
-![](/docs/assets/FSPComparison.png)
-![](/docs/assets/FSPToolTip.png)
+### 🏠 House Sales Analysis Dashboard  
+🔗 [View on Tableau](https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales)
+
+- Designed an interactive dashboard to explore house sales data in King County.
+- Included built-in filters for exploring **sales trends**, **demographics**, and **price influencers**.
+- Enabled **dynamic visual exploration** through maps, bar charts, and KPIs.
+- Ideal for real estate analysts seeking actionable insights.
+
+<img src="/docs/assets/HouseSales.png" alt="House Sales Dashboard" style="max-width: 100%; border-radius: 6px; margin-top: 10px; margin-bottom: 20px;">
+---
+
+### ⚽ Football Striker Performance Analysis  
+🔗 [View on GitHub](https://github.com/Chiragsuri/Football-Stricker-Performance)
+
+- Built a Power BI dashboard analyzing performance of 500 professional football strikers.
+- Conducted **KPI tracking**, **comparison analysis**, and **in-depth breakdowns** using tooltips.
+- Used **Excel for data wrangling**, Power BI for visual storytelling, and custom interactivity.
+- Helped classify players based on technical and personal performance metrics.
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px;">
+  <img src="/docs/assets/FSPKPI.png" alt="KPI Overview" style="width: 32%; border-radius: 6px;">
+  <img src="/docs/assets/FSPComparison.png" alt="Comparison Analysis" style="width: 32%; border-radius: 6px;">
+  <img src="/docs/assets/FSPToolTip.png" alt="Custom Tooltip" style="width: 32%; border-radius: 6px;">
+</div>
+
