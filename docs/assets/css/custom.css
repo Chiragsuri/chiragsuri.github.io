@@ -1,0 +1,154 @@
+/* General */
+/* body {
+  background: #181818;
+  color: #f0f0f0;
+  font-family: system-ui, sans-serif;
+} */
+
+/* Headings */
+/* h1,
+h2 {
+  color: #eaeaea;
+  margin-top: 2rem;
+} */
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+/* Skill Card */
+.skill-card {
+  padding: 10px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+/* Skill Card Title */
+.skill-card strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+/* Education Table */
+.edu-table-container {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  overflow-x: auto; /* Enable horizontal scroll on small screens */
+}
+
+.edu-table {
+  width: 100%;
+  min-width: 600px; /* Prevents columns from squishing too much on desktop */
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #181818;
+}
+
+.edu-table th {
+  background-color: #23272f; /* header background */
+}
+
+.edu-table td {
+  background-color: transparent; /* remove body background */
+}
+
+.edu-table thead tr th:first-child {
+  border-top-left-radius: 10px;
+}
+.edu-table thead tr th:last-child {
+  border-top-right-radius: 10px;
+}
+.edu-table tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+.edu-table tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.edu-table th,
+.edu-table td {
+  padding: 10px;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.edu-table td:nth-child(3),
+.edu-table td:nth-child(4),
+.edu-table th:nth-child(3),
+.edu-table th:nth-child(4) {
+  text-align: center;
+}
+
+.edu-table tr {
+  border-top: 1px solid #333;
+}
+
+/* Project Images */
+.project-images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-images img {
+  width: 32%;
+  border-radius: 6px;
+}
+
+/* House Sales Dashboard Image */
+.homepage-img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* single column on small screens */
+  }
+
+  .project-images img {
+    width: 100%;
+  }
+}
+
+/* Hover effects for skill cards and project images */
+.skill-card,
+.project-images img {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effects for skill cards and project images */
+.skill-card:hover,
+.project-images img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Cursor pointer for project images
+.project-images img:hover {
+  cursor: pointer;
+} */
+
+/* Responsive font size for education table */
+@media (max-width: 600px) {
+  .edu-table {
+    font-size: 0.85rem;
+  }
+}
