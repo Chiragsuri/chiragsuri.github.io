@@ -1,18 +1,9 @@
-/* General */
-/* body {
-  background: #181818;
-  color: #f0f0f0;
-  font-family: system-ui, sans-serif;
-} */
+/* ==================================
+   🧩 _custom.css
+   → Used for homepage sections like skills, education table, sliders, etc.
+================================== */
 
-/* Headings */
-/* h1,
-h2 {
-  color: #eaeaea;
-  margin-top: 2rem;
-} */
-
-/* Skills Grid */
+/* ==== Skills Grid ==== */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -28,6 +19,7 @@ h2 {
   color: #f0f0f0;
   border-radius: 10px;
   border: 1px solid #333;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Skill Card Title */
@@ -35,19 +27,29 @@ h2 {
   display: block;
   margin-bottom: 4px;
 }
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
 
-/* Education Table */
+.center-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+}
+
+/* ==== Education Table ==== */
 .edu-table-container {
   margin-bottom: 1.5rem;
   width: 100%;
-  max-width: 100%;
-  padding: 0;
-  overflow-x: auto; /* Enable horizontal scroll on small screens */
+  overflow-x: auto;
 }
 
 .edu-table {
   width: 100%;
-  min-width: 600px; /* Prevents columns from squishing too much on desktop */
+  min-width: 600px;
   border-collapse: separate;
   border-spacing: 0;
   font-size: 0.9rem;
@@ -58,13 +60,26 @@ h2 {
 }
 
 .edu-table th {
-  background-color: #23272f; /* header background */
+  background-color: #23272f;
 }
-
 .edu-table td {
-  background-color: transparent; /* remove body background */
+  background-color: transparent;
 }
-
+.edu-table th,
+.edu-table td {
+  padding: 10px;
+  text-align: left;
+}
+.edu-table td:nth-child(3),
+.edu-table td:nth-child(4),
+.edu-table th:nth-child(3),
+.edu-table th:nth-child(4) {
+  text-align: center;
+}
+.edu-table tr {
+  border-top: 1px solid #333;
+}
+/* Rounded corners */
 .edu-table thead tr th:first-child {
   border-top-left-radius: 10px;
 }
@@ -78,38 +93,44 @@ h2 {
   border-bottom-right-radius: 10px;
 }
 
-.edu-table th,
-.edu-table td {
-  padding: 10px;
-  text-align: left;
-  word-wrap: break-word;
+/* ==== Project Image Sliders ==== */
+.project-image-wrapper {
+  max-width: 100%;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #111;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+.project-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.project-image-wrapper.auto-slider {
+  position: relative;
 }
 
-.edu-table td:nth-child(3),
-.edu-table td:nth-child(4),
-.edu-table th:nth-child(3),
-.edu-table th:nth-child(4) {
-  text-align: center;
-}
-
-.edu-table tr {
-  border-top: 1px solid #333;
-}
-
-/* Project Images */
-.project-images {
+.slider-track {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 10px;
+  transition: transform 0.6s ease-in-out;
+}
+.slider-track img {
+  flex: 0 0 100%;
+  background-color: #111;
 }
 
-.project-images img {
-  width: 32%;
-  border-radius: 6px;
+.auto-slider-track img {
+  opacity: 0.2;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+.auto-slider-track img.visible {
+  opacity: 1;
 }
 
-/* House Sales Dashboard Image */
+/* ==== Project Image: Static (e.g. House) ==== */
 .homepage-img {
   max-width: 100%;
   border-radius: 6px;
@@ -117,38 +138,21 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* Responsive Styles */
+/* ==== Mobile Tweaks ==== */
 @media (max-width: 600px) {
   .skills-grid {
-    grid-template-columns: 1fr; /* single column on small screens */
+    grid-template-columns: 1fr;
   }
 
   .project-images img {
     width: 100%;
   }
-}
-
-/* Hover effects for skill cards and project images */
-.skill-card,
-.project-images img {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-/* Hover effects for skill cards and project images */
-.skill-card:hover,
-.project-images img:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-/* Cursor pointer for project images
-.project-images img:hover {
-  cursor: pointer;
-} */
-
-/* Responsive font size for education table */
-@media (max-width: 600px) {
-  .edu-table {
-    font-size: 0.85rem;
+  .project-image-wrapper {
+    max-width: 95%;
+    margin: 1rem auto;
+  }
+  .slider-track {
+    flex-direction: column;
+    animation: none;
   }
 }

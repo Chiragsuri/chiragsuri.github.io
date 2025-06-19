@@ -32,6 +32,8 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  - _includes/head
+  - _includes/footer
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -55,9 +57,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "Chirag Suri"
-  avatar : "/docs/assets/Chirag_Pic.png"
-  bio    : "Aspiring Data Analyst and a Cricket Lover"
+  name: "Chirag Suri"
+  avatar: "/docs/assets/Chirag_Pic.png"
+  bio: "Aspiring Data Analyst and a Cricket Lover"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -84,6 +86,15 @@ footer:
       icon: "fab fa-fw fa-google"
       url: "ue205030.chirag.ece@gmail.com"
 
+# Collections
+# Collections are a way to group related content together. They can be used
+# to create custom content types, such as projects, portfolios, or any other
+# type of content that doesn't fit into the standard Jekyll post or page
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
 defaults:
   # _posts
   - scope:
@@ -107,6 +118,14 @@ defaults:
       author_profile: true
       header:
         anchor: false #for disabling perma links to every header present in text
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: true
+      share: true
 
 category_archive:
   type: liquid

@@ -3,5 +3,29 @@
   type="image/png"
   href="{{ '/docs/assets/line-chart.png' | relative_url }}"
 />
-<!-- In your layout file (e.g., _layouts/single.html) inside <head> -->
-<link rel="stylesheet" href="/docs/assets/css/custom.css" />
+
+<link
+  rel="stylesheet"
+  href="{{ '/docs/assets/css/custom.css' | relative_url }}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ '/docs/assets/css/projects.css' | relative_url }}"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  integrity="sha512-vzBcAq0fUNxxDCNWwVwLMURC+LtDAWNO3ljwh6uw53xGHD38hQ7hXIp+vbtv/NhK8iVcY8XUGvRyqQkIqlM9Nw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+
+<link
+  rel="stylesheet"
+  href="{{ '/docs/assets/css/project_page.css' | relative_url }}"
+/>
+
+{% capture custom_title %} {% if page.url == "/projects/" %} Projects | {{
+site.title }} {% elsif page.title %} {{ page.title }} | {{ site.title }} {% else
+%} {{ site.title }} {% endif %} {% endcapture %}
+<title>{{ custom_title | strip_newlines }}</title>

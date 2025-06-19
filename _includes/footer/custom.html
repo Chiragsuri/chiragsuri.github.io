@@ -1,0 +1,22 @@
+<script>
+  window.addEventListener("load", function () {
+    const sliders = document.querySelectorAll(".auto-slider-track");
+
+    sliders.forEach((track) => {
+      const slides = track.querySelectorAll("img");
+      if (slides.length <= 1) return;
+
+      let index = 0;
+
+      // Mark first image as visible
+      slides[0].classList.add("visible");
+
+      setInterval(() => {
+        slides.forEach((img) => img.classList.remove("visible"));
+        index = (index + 1) % slides.length;
+        slides[index].classList.add("visible");
+        track.style.transform = `translateX(-${index * 100}%)`;
+      }, 3000);
+    });
+  });
+</script>
