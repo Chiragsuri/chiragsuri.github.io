@@ -80,6 +80,7 @@
   align-items: center;
   gap: 10px;
   transition: all 0.25s ease;
+  text-decoration: none;
 }
 .link-card:hover {
   background: rgba(0, 123, 255, 0.25);
@@ -152,6 +153,7 @@ ul.query-output-list li a i {
   font-size: 0.9rem;
   border: 1px solid rgba(77, 184, 255, 0.3);
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 .back-btn-top a:hover,
 .back-btn-bottom a:hover {
@@ -163,4 +165,30 @@ ul.query-output-list li a i {
 /* ==== Hide Pagination from bottom ==== */
 .pagination {
   display: none !important;
+}
+
+/* Proper image styling for markdown-rendered images inside Jekyll pages */
+.page-content img,
+.page__content img,
+.markdown-body img,
+article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.page-content img:hover,
+.page__content img:hover,
+.markdown-body img:hover,
+article img:hover {
+  transform: scale(1.01);
+}
+
+/* Add margin only to project pages if desired */
+body.page-project .page-content img {
+  margin: 1.5rem 0;
 }

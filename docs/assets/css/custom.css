@@ -29,7 +29,8 @@
 }
 .skill-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.6);
+  border-color: rgba(0, 123, 255, 0.6);
 }
 
 .center-text {
@@ -138,6 +139,147 @@
   margin-bottom: 20px;
 }
 
+/* --- Author Profile Styles --- */
+.author__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.author__avatar img {
+  border-radius: 50%;
+  max-width: 130px;
+  display: block;
+}
+
+.author__content {
+  text-align: center;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.author__name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #ffffff;
+}
+
+.author__bio {
+  font-size: 0.9rem;
+  color: #cccccc;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+/* === Author Links Wrapper === */
+.author-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 1rem;
+}
+
+.author-links-wrapper a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #90caf9;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: rgba(0, 123, 255, 0.08);
+  border: 1px solid rgba(0, 123, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.author-links-wrapper a:hover {
+  color: #ffffff;
+  background-color: rgba(0, 123, 255, 0.2);
+  border-color: rgba(0, 123, 255, 0.6);
+}
+
+/* === Responsive Dropdown for Mobile === */
+.follow-dropdown {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.follow-btn {
+  background: rgba(0, 123, 255, 0.2);
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 123, 255, 0.4);
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.follow-btn:hover {
+  background: rgba(0, 123, 255, 0.35);
+}
+
+.dropdown-links {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.dropdown-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: #90caf9;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: rgba(0, 123, 255, 0.08);
+  border: 1px solid rgba(0, 123, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.dropdown-links a:hover {
+  color: #ffffff;
+  background-color: rgba(0, 123, 255, 0.2);
+  border-color: rgba(0, 123, 255, 0.6);
+}
+
+/* === Toggle Behavior for Small Screens === */
+@media (max-width: 600px) {
+  .author-links-wrapper {
+    display: none;
+    align-items: center;
+  }
+
+  .follow-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .follow-dropdown.active .dropdown-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 /* ==== Mobile Tweaks ==== */
 @media (max-width: 600px) {
   .skills-grid {
@@ -152,7 +294,7 @@
     margin: 1rem auto;
   }
   .slider-track {
-    flex-direction: column;
+    flex-direction: row;
     animation: none;
   }
 }

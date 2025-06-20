@@ -1,8 +1,54 @@
 ---
 permalink: /about/
-title: "About"
+layout: single
+classes: wide
+author_profile: true
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+<div class="page-header">
+  <i class="fa-solid fa-address-card" style="color:rgb(156, 118, 12);"></i>
+  <h1>About</h1>
+</div>
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+<div class="links-grid">
+
+  <a href="https://github.com/Chiragsuri" target="_blank" class="link-card">
+    <i class="fa-brands fa-github"></i>
+    GitHub
+  </a>
+  <a href="https://www.linkedin.com/in/chirag-suri/" target="_blank" class="link-card">
+    <i class="fa-brands fa-linkedin"></i>
+    LinkedIn
+  </a>
+  <a href="https://chiragsuri.github.io" target="_blank" class="link-card">
+    <i class="fa-solid fa-globe"></i>
+    Portfolio
+  </a>
+</div>
+
+<div class="contact-section">
+  <h2>📬 Contact Me</h2>
+  <div class="contact-flex-box">
+    <form id="contact-form" class="contact-form">
+      <div class="form-group mb-3">
+        <label for="name">👤 Your Name</label>
+        <input type="text" name="from_name" id="name" class="form-control" required>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="email">📧 Your Email</label>
+        <input type="email" name="reply_to" id="email" class="form-control" required>
+      </div>
+
+      <div class="form-group mb-3">
+        <label for="message">📝 Your Message</label>
+        <textarea name="message" id="message" rows="4" class="form-control" required></textarea>
+      </div>
+
+      <button type="submit" class="send-btn">Send Message</button>
+    </form>
+
+  </div>
+
+  <div id="form-toast" class="form-toast"></div>
+</div>

@@ -12,6 +12,10 @@ header: false
   <h1>Projects</h1>
 </div>
 
+<div class="back-btn-top">
+  <a href="/"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+</div>
+
 <div class="project-grid">
 
   <!-- IPL Project -->
@@ -82,4 +86,11 @@ header: false
     </div>
   </div>
 
+</div>
+
+---
+
+<div class="cert-footer-nav">
+  <a href="/" class="footer-btn"><i class="fa-solid fa-house"></i> Back to Home</a>
+  <a href="/certifications/" class="footer-btn"><i class="fa-solid fa-graduation-cap"></i> See Certifications</a>
 </div>

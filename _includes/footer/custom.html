@@ -20,3 +20,60 @@
     });
   });
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const followBtn = document.getElementById("followBtn");
+    const dropdown = document.querySelector(".author__urls.follow-dropdown");
+
+    if (followBtn && dropdown) {
+      followBtn.addEventListener("click", function () {
+        dropdown.classList.toggle("show");
+      });
+    }
+  });
+</script>
+
+<script>
+  document.querySelectorAll(".follow-btn").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      btn.parentElement.classList.toggle("active");
+    })
+  );
+</script>
+
+<!-- about -->
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init("ekc09s12Vt5OB3CO-"); // Replace with your actual EmailJS Public Key
+  })();
+
+  const form = document.getElementById("contact-form");
+  const toast = document.getElementById("form-toast");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_mghxt4s", "template_sqrqdgr", form).then(
+      function () {
+        showToast("Message sent successfully! ✅", "success");
+        form.reset();
+      },
+      function (error) {
+        showToast("Failed to send message. Please try again.", "error");
+        console.error(error);
+      }
+    );
+  });
+
+  function showToast(message, type) {
+    toast.textContent = message;
+    toast.className = `form-toast ${type}`;
+    toast.style.display = "block";
+    setTimeout(() => {
+      toast.style.display = "none";
+    }, 4000);
+  }
+</script>

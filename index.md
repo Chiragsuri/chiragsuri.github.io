@@ -4,7 +4,10 @@ author_profile: true
 classes: wide
 ---
 
-<h1>Data Analyst</h1>
+<div class="page-header">
+  <i class="fa-solid fa-graduation-cap" style="color: #74C0FC;"></i>
+  <h1>Data Analyst</h1>
+</div>
 
 ## Skills
 
@@ -193,7 +196,7 @@ _Jan 2024 – June 2024_
     <i class="fa-solid fa-arrow-right"></i> View Full Project
   </a>
   <a href="https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales" target="_blank" class="link-card">
-    <i class="fa-brands fa-tableau"></i> View on Tableau
+    <i class="fa-solid fa-chart-simple"></i> View on Tableau
   </a>
 </div>
 
@@ -203,3 +206,10 @@ _Jan 2024 – June 2024_
 - 🧑‍💼 Tailored for **real estate stakeholders** to derive actionable insights.
 
 <img src="/docs/assets/HouseSales.png" alt="House Sales Dashboard" class="homepage-img">
+
+---
+
+<div class="cert-footer-nav">
+  <a href="/projects/" class="footer-btn"><i class="fa-solid fa-folder-open"></i> See Projects</a>
+  <a href="/certifications/" class="footer-btn"><i class="fa-solid fa-graduation-cap"></i> See Certifications</a>
+</div>
