@@ -23,12 +23,11 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const followBtn = document.getElementById("followBtn");
-    const dropdown = document.querySelector(".author__urls.follow-dropdown");
-
-    if (followBtn && dropdown) {
-      followBtn.addEventListener("click", function () {
-        dropdown.classList.toggle("show");
+    const toggle = document.querySelector(".nav-toggle");
+    const menu = document.querySelector(".visible-links");
+    if (toggle && menu) {
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
       });
     }
   });

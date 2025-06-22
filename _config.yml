@@ -34,6 +34,7 @@ include:
   - _pages
   - _includes/head
   - _includes/footer
+  - _includes/nav.html
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -133,3 +134,6 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+header:
+  nav: false

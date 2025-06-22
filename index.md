@@ -9,7 +9,7 @@ classes: wide
   <h1>Data Analyst</h1>
 </div>
 
-## Skills
+## 🤹 Skills
 
 <div class="skills-grid">
 
@@ -55,7 +55,7 @@ classes: wide
 
 </div>
 
-## Education
+## 🧑‍🎓 Education
 
 <div class="edu-table-container">
   <table class="edu-table">

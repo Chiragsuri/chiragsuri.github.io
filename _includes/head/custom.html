@@ -32,3 +32,7 @@
 site.title }} {% elsif page.title %} {{ page.title }} | {{ site.title }} {% else
 %} {{ site.title }} {% endif %} {% endcapture %}
 <title>{{ custom_title | strip_newlines }}</title>
+
+{% include nav.html %}
+
+<link rel="stylesheet" href="{{ '/docs/assets/css/nav.css' | relative_url }}" />

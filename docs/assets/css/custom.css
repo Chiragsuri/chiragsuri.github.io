@@ -94,6 +94,20 @@
   border-bottom-right-radius: 10px;
 }
 
+/* Fix right-side black column at specific breakpoints */
+@media (min-width: 890px) and (max-width: 1024px),
+  (min-width: 1180px) and (max-width: 1280px) {
+  .edu-table-container {
+    overflow-x: auto;
+    max-width: 100vw;
+  }
+  .edu-table {
+    min-width: 600px; /* or your minimum needed width */
+    width: auto; /* Let table shrink to fit content */
+    table-layout: auto; /* Let columns size naturally */
+  }
+}
+
 /* ==== Project Image Sliders ==== */
 .project-image-wrapper {
   max-width: 100%;
@@ -173,6 +187,13 @@
   color: #cccccc;
   line-height: 1.4;
   margin-bottom: 1rem;
+}
+
+.author__urls-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 /* === Author Links Wrapper === */
@@ -277,6 +298,45 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .author__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    max-height: 40px;
+  }
+  .author__avatar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+  }
+}
+
+/* Ensure avatar stays centered and resizes smoothly between 601px and 1024px,
+  and keeps image height consistent with max-width 600px layout */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .author__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .author__avatar img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px; /* Match the 600px breakpoint */
+    width: auto;
+    object-fit: contain;
+    max-width: 130px; /* Prevents stretching on larger screens */
   }
 }
 

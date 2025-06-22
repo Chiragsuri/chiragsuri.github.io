@@ -1,9 +1,8 @@
-main:
-  - title: "Projects"
-    url: /projects/
-  - title: "Certifications"
-    url: /certifications/
-  - title: "TextUtils"
-    url: /textUtils/
-  - title: "About"
-    url: /about/
+# - title: "Projects"
+#   url: /projects/
+# - title: "Certifications"
+#   url: /certifications/
+# - title: "TextUtils"
+#   url: /textUtils/
+# - title: "About"
+#   url: /about/
