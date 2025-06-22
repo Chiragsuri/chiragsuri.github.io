@@ -99,7 +99,7 @@ _Jan 2024 – June 2024_
 ## 🚀 Projects
 
 <div class="links-grid">
-  <a href="/projects/" class="link-card">
+  <a href="https://chiragsuri.github.io/projects/" class="link-card">
     <i class="fa-solid fa-folder-tree"></i> View All Projects
   </a>
 </div>
@@ -109,9 +109,10 @@ _Jan 2024 – June 2024_
 ### 🏏 IPL Data Analysis (Season 2024 and 2025)
 
 <div class="links-grid">
-  <a href="/projects/ipl-analysis/" class="link-card">
+  <a href="https://chiragsuri.github.io/projects/ipl-analysis/" class="link-card">
     <i class="fa-solid fa-arrow-right"></i> View Full Project
   </a>
+<br />
   <a href="https://github.com/Chiragsuri/IPL_Analysis" target="_blank" class="link-card">
     <i class="fa-brands fa-github"></i> View on GitHub
   </a>
@@ -138,9 +139,10 @@ _Jan 2024 – June 2024_
 ### 🛍️ Sales Data Comparison & Analysis (2023–2024)
 
 <div class="links-grid">
-  <a href="/projects/sales-data-analysis/" class="link-card">
+  <a href="https://chiragsuri.github.io/projects/sales-data-analysis/" class="link-card">
     <i class="fa-solid fa-arrow-right"></i> View Full Project
   </a>
+  <br />
   <a href="https://github.com/Chiragsuri/Sales-Data-Analysis" target="_blank" class="link-card">
     <i class="fa-brands fa-github"></i> View on GitHub
   </a>
@@ -165,9 +167,10 @@ _Jan 2024 – June 2024_
 ### ⚽ Football Striker Performance Analysis
 
 <div class="links-grid">
-  <a href="/projects/football-striker/" class="link-card">
+  <a href="https://chiragsuri.github.io/projects/football-striker/" class="link-card">
     <i class="fa-solid fa-arrow-right"></i> View Full Project
   </a>
+  <br />
   <a href="https://github.com/Chiragsuri/Football-Striker-Performance" target="_blank" class="link-card">
     <i class="fa-brands fa-github"></i> View on GitHub
   </a>
@@ -186,9 +189,10 @@ _Jan 2024 – June 2024_
 ### 🏠 House Sales Analysis Dashboard
 
 <div class="links-grid">
-  <a href="/projects/house-sales-analysis/" class="link-card">
+  <a href="https://chiragsuri.github.io/projects/house-sales-analysis/" class="link-card">
     <i class="fa-solid fa-arrow-right"></i> View Full Project
   </a>
+  <br />
   <a href="https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales" target="_blank" class="link-card">
     <i class="fa-solid fa-chart-simple"></i> View on Tableau
   </a>
