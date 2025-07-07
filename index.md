@@ -92,9 +92,18 @@ classes: wide
 
 ## 🔧 Work Experience
 
-### **Junior Research Analyst**
+### **Freelance Data Analyst**
 
-**GreyB Research Pvt. Ltd.**  
+**Independent Projects | Remote**  
+_Jan 2025 – Present_
+
+- 🧩 Built end-to-end analytics projects using **Python**, **SQL**, **Power BI**, and **Excel** across domains like sports and sales.
+- 📊 Applied structured concepts from a **Data Analytics Bootcamp** to strengthen data cleaning, EDA, and dashboarding workflows.
+- 💡 Delivered insights around **real-world KPIs**, stakeholder needs, and business use cases.
+
+### **Research Analyst Intern**
+
+**GreyB Research Pvt. Ltd. | Punjab, India**  
 _Jan 2024 – June 2024_
 
 - 🔍 Conducted in-depth **prior art searches** using Derwent and Orbit across global patent and technical databases.
