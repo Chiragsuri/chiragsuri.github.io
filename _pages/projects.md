@@ -18,6 +18,25 @@ header: false
 
 <div class="project-grid">
 
+<!-- Sales Health Monitor -->
+  <div class="project-card">
+    <a class="project-card-link" href="/projects/sales-health-monitor/">
+      <img src="/docs/assets/SHM_Dashboard1.png" alt="Sales Health Monitor Dashboard">
+      <div class="project-title-btn">📊 Sales Health Monitor</div>
+    </a>
+    <div class="tech-tags">
+      <span class="tech-tag has-tooltip" data-tooltip="Star schema with 8 tables & 11 views"><i class="fa-solid fa-database"></i> MySQL</span>
+      <span class="tech-tag has-tooltip" data-tooltip="Multi-page dashboards with custom DAX"><i class="fa-solid fa-chart-column"></i> Power BI</span>
+      <span class="tech-tag has-tooltip" data-tooltip="EDA, data validation, automation"><i class="fa-brands fa-python"></i> Python</span>
+      <span class="tech-tag has-tooltip" data-tooltip="Pandas, NumPy for data processing"><i class="fa-solid fa-table"></i> Pandas</span>
+      <span class="tech-tag has-tooltip" data-tooltip="Time intelligence & YoY tracking"><i class="fa-solid fa-function"></i> DAX</span>
+      <span class="tech-tag has-tooltip" data-tooltip="Workflow optimization & documentation"><i class="fa-solid fa-robot"></i> Generative AI</span>
+    </div>
+    <div class="project-links">
+      <a href="https://github.com/Chiragsuri/Sales_Health_Monitor" target="_blank">GitHub</a>
+    </div>
+  </div>
+
   <!-- IPL Project -->
   <div class="project-card">
     <a class="project-card-link" href="/projects/ipl-analysis/">

@@ -97,9 +97,9 @@ classes: wide
 **Independent Projects | Remote**  
 _Jan 2025 – Present_
 
-- 🧩 Built end-to-end analytics projects using **Python**, **SQL**, **Power BI**, and **Excel** across domains like sports and sales.
-- 📊 Applied structured concepts from a **Data Analytics Bootcamp** to strengthen data cleaning, EDA, and dashboarding workflows.
-- 💡 Delivered insights around **real-world KPIs**, stakeholder needs, and business use cases.
+- 🚀 Delivered end-to-end analytics solutions including **automated BI pipelines**, **MySQL databases**, and interactive **Power BI dashboards** across sales and sports domains.
+- 🔍 Engineered data validation frameworks and exploratory analysis workflows to ensure data quality and uncover actionable insights.
+- 💡 Leveraged **AI tools** to enhance documentation quality, workflow efficiency, and project delivery speed.
 
 ### **Research Analyst Intern**
 
@@ -117,6 +117,36 @@ _Jan 2024 – June 2024_
   <a href="/projects/" class="link-card">
     <i class="fa-solid fa-folder-tree"></i> View All Projects
   </a>
+</div>
+
+---
+
+### 📊 Sales Health Monitor – Automated BI Pipeline
+
+<div class="links-grid">
+  <a href="/projects/sales-health-monitor/" class="link-card">
+    <i class="fa-solid fa-arrow-right"></i> View Full Project
+  </a>
+  <a href="https://github.com/Chiragsuri/Sales_Health_Monitor" target="_blank" class="link-card">
+    <i class="fa-brands fa-github"></i> View on GitHub
+  </a>
+</div>
+
+- 🚀 _End-to-end automated BI pipeline processing 800K+ retail transactions._
+- 🗄️ Engineered **MySQL star schema database** with 8 tables and 11 analytical views for scalable data modeling.
+- 🔍 Built **adaptive anomaly detection framework** reducing false alerts by **85%** through percentile-based thresholds.
+- 📊 Developed **4 multi-page Power BI dashboards** with custom **DAX measures** for executive, risk-monitor, customer, and geographic intelligence.
+- 🧪 Conducted comprehensive **EDA** using **Python** (Pandas, NumPy, Matplotlib, Seaborn) uncovering seasonality patterns and customer segmentation.
+- ⚙️ Designed **modular automation workflows** for data generation, cleaning, validation, and dashboard refresh cycles.
+- 💡 Dashboard enables stakeholders to track **YoY growth**, **revenue drivers**, and **high-value customer segments** in real-time.
+
+<div class="project-image-wrapper auto-slider">
+  <div class="slider-track auto-slider-track">
+    <img src="/docs/assets/SHM_Dashboard1.png" alt="Executive Overview">
+    <img src="/docs/assets/SHM_Dashboard2.png" alt="Anomaly & Risk Monitor">
+    <img src="/docs/assets/SHM_Dashboard3.png" alt="Customer Intelligence">
+    <img src="/docs/assets/SHM_Dashboard4.png" alt="Geographic & Product Performance">
+  </div>
 </div>
 
 ---
