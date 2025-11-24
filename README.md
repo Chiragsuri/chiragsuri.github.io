@@ -91,15 +91,9 @@
 **Independent Projects | Remote**  
 _Jan 2025 – Present_
 
-<<<<<<< HEAD
 - 🚀 Delivered end-to-end analytics solutions including **automated BI pipelines**, **MySQL databases**, and interactive **Power BI dashboards** across sales and sports domains.
 - 🔍 Engineered data validation frameworks and exploratory analysis workflows to ensure data quality and uncover actionable insights.
 - 💡 Leveraged **AI tools** to enhance documentation quality, workflow efficiency, and project delivery speed.
-=======
-- 🧩 Built end-to-end analytics projects using **Python**, **SQL**, **Power BI**, and **Excel** across domains like sports and sales.
-- 📊 Applied structured concepts from a **Data Analytics Bootcamp** to strengthen data cleaning, EDA, and dashboarding workflows.
-- 💡 Delivered insights around **real-world KPIs**, stakeholder needs, and business use cases.
->>>>>>> 8567f887182f763d8d904905e2c2727531189cdb
 
 ### **Research Analyst Intern**
 
