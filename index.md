@@ -1,254 +1,190 @@
 ---
 layout: single
-author_profile: true
+author_profile: false
 classes: wide
 ---
 
-<div class="page-header">
-  <i class="fa-solid fa-graduation-cap" style="color: #74C0FC;"></i>
-  <h1>Data Analyst</h1>
-</div>
-
-## 🤹 Skills
-
-<div class="skills-grid">
-
-  <div class="skill-card center-text">
-    <strong>📥 Data Collection & Querying</strong>
-    MySQL, Excel
-  </div>
-
-  <div class="skill-card center-text">
-    <strong>🧹 Data Cleaning & Validation</strong>
-    Pandas, NumPy, Excel
-  </div>
-
-  <div class="skill-card center-text">
-    <strong>📊 Analysis & Manipulation</strong>
-    Python, Jupyter Notebook, Pandas, NumPy
-  </div>
-
-  <div class="skill-card center-text">
-    <strong>📈 Visualization</strong>
-    Tableau, Power BI, Matplotlib, Seaborn
-  </div>
-
-  <div class="skill-card center-text">
-    <strong>🤖 Machine Learning</strong>
-    Scikit-learn (sklearn)
-  </div>
-
-  <div class="skill-card center-text">
-    <strong>🛠️ Tools & Platforms</strong>
-    Git/GitHub, Excel, Jupyter Notebook
-  </div>
-
-  <div class="skill-card center-text">
-    <strong>💡 Generative AI</strong>
-    ChatGPT for productivity, storytelling, and rapid ideation
-  </div>
-
-  <div class="skill-card center-text">
-    <strong>🌐 Languages</strong>
-    English, Hindi
-  </div>
-
-</div>
-
-## 🧑‍🎓 Education
-
-<div class="edu-table-container">
-  <table class="edu-table">
-    <thead>
-      <tr>
-        <th>🎓 Exam/Degree</th>
-        <th>🏫 Institution</th>
-        <th>📅 Year</th>
-        <th>⭐ Score</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Common Admission Test (CAT)</td>
-        <td>Indian Institutes of Management (IIMs)</td>
-        <td>2024</td>
-        <td>Percentile: 96.06</td>
-      </tr>
-      <tr>
-        <td>B.E., Electronics and Communication (ECE)</td>
-        <td>UIET, Panjab University, Chandigarh</td>
-        <td>2024</td>
-        <td>CGPA: 8.59</td>
-      </tr>
-      <tr>
-        <td>Class 12th</td>
-        <td>Govt. Model Sr. Sec. School, Chandigarh</td>
-        <td>2020</td>
-        <td>92.8%</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-## 🔧 Work Experience
-
-### **Freelance Data Analyst**
-
-**Independent Projects | Remote**  
-_Jan 2025 – Present_
-
-- 🚀 Delivered end-to-end analytics solutions including **automated BI pipelines**, **MySQL databases**, and interactive **Power BI dashboards** across sales and sports domains.
-- 🔍 Engineered data validation frameworks and exploratory analysis workflows to ensure data quality and uncover actionable insights.
-- 💡 Leveraged **AI tools** to enhance documentation quality, workflow efficiency, and project delivery speed.
-
-### **Research Analyst Intern**
-
-**GreyB Research Pvt. Ltd. | Punjab, India**  
-_Jan 2024 – June 2024_
-
-- 🔍 Conducted in-depth **prior art searches** using Derwent and Orbit across global patent and technical databases.
-- 📝 Delivered **comprehensive search reports** highlighting key insights, claim charts, and critical prior references to support legal and R&D teams.
-- ✅ Contributed to **patentability**, **invalidity**, and **freedom-to-operate (FTO)** assessments, enabling informed IP decisions.
-- 🏅 **Certified as a Specialist-level Patent Analyst** for exceeding quality and speed benchmarks.
-
-## 🚀 Projects
-
-<div class="links-grid">
-  <a href="/projects/" class="link-card">
-    <i class="fa-solid fa-folder-tree"></i> View All Projects
-  </a>
-</div>
-
----
-
-### 📊 Sales Health Monitor – Automated BI Pipeline
-
-<div class="links-grid">
-  <a href="/projects/sales-health-monitor/" class="link-card">
-    <i class="fa-solid fa-arrow-right"></i> View Full Project
-  </a>
-  <a href="https://github.com/Chiragsuri/Sales_Health_Monitor" target="_blank" class="link-card">
-    <i class="fa-brands fa-github"></i> View on GitHub
-  </a>
-</div>
-
-- 🚀 _End-to-end automated BI pipeline processing 800K+ retail transactions._
-- 🗄️ Engineered **MySQL star schema database** with 8 tables and 11 analytical views for scalable data modeling.
-- 🔍 Built **adaptive anomaly detection framework** reducing false alerts by **85%** through percentile-based thresholds.
-- 📊 Developed **4 multi-page Power BI dashboards** with custom **DAX measures** for executive, risk-monitor, customer, and geographic intelligence.
-- 🧪 Conducted comprehensive **EDA** using **Python** (Pandas, NumPy, Matplotlib, Seaborn) uncovering seasonality patterns and customer segmentation.
-- ⚙️ Designed **modular automation workflows** for data generation, cleaning, validation, and dashboard refresh cycles.
-- 💡 Dashboard enables stakeholders to track **YoY growth**, **revenue drivers**, and **high-value customer segments** in real-time.
-
-<div class="project-image-wrapper auto-slider">
-  <div class="slider-track auto-slider-track">
-    <img src="/docs/assets/SHM_Dashboard1.png" alt="Executive Overview">
-    <img src="/docs/assets/SHM_Dashboard2.png" alt="Anomaly & Risk Monitor">
-    <img src="/docs/assets/SHM_Dashboard3.png" alt="Customer Intelligence">
-    <img src="/docs/assets/SHM_Dashboard4.png" alt="Geographic & Product Performance">
+<div class="hero-section reveal">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-blob blob-3"></div>
+  <div class="hero-content">
+    <h1 class="hero-name">Chirag Suri</h1>
+    <p class="hero-role">Data Professional & Aspiring Strategist</p>
+    <p class="hero-bio">Turning complex data into strategic assets. I bridge the gap between raw technical pipelines and executive decision-making to drive measurable business impact.</p>
+    <div class="hero-links">
+      <a href="#work" class="hero-btn hero-btn-primary">Explore Work</a>
+      <a href="https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_ID" target="_blank" class="hero-btn hero-btn-secondary">View CV</a>
+    </div>
   </div>
 </div>
 
----
+<div class="section">
+  <div class="bento-grid">
+    <div class="bento-card bento-large reveal">
+      <div class="bento-content">
+        <h3>The Focus</h3>
+        <p>Specializing in the intersection of data engineering and strategic analytics. I build systems that reduce noise and surface the critical signals leadership needs to scale operations and optimize revenue.</p>
+      </div>
+    </div>
 
-### 🏏 IPL Data Analysis (Season 2024 and 2025)
+    <div class="bento-card bento-medium reveal">
+      <div class="bento-content">
+        <h3>The Arsenal</h3>
+        <div class="tech-icons">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">SQL</span>
+          <span class="tech-badge">Power BI</span>
+          <span class="tech-badge">Scikit-learn</span>
+          <span class="tech-badge">Pandas</span>
+          <span class="tech-badge">ETL</span>
+        </div>
+      </div>
+    </div>
 
-<div class="links-grid">
-  <a href="/projects/ipl-analysis/" class="link-card">
-    <i class="fa-solid fa-arrow-right"></i> View Full Project
-  </a>
-  <a href="https://github.com/Chiragsuri/IPL_Analysis" target="_blank" class="link-card">
-    <i class="fa-brands fa-github"></i> View on GitHub
-  </a>
-</div>
+    <div class="bento-card bento-small reveal">
+      <div class="bento-content">
+        <h3>The Edge</h3>
+        <div class="bento-stat">96.06%</div>
+        <p>CAT 2024: Top 4% Nationally</p>
+      </div>
+    </div>
 
-- 😎 _Interactive Power BI Dashboard built for IPL 2024 & 2025 seasons._
-- 🗃️ Extracted datasets on seasons, players, and matches using structured **SQL queries.**
-- 🧪 Performed **EDA** at player and team level using **Python** (Pandas, Matplotlib, Seaborn).
-- 📊 Created **dynamic KPIs, trend charts, and filters** in Power BI for match behavior and performance.
-- 🧠 Used **ChatGPT** to assist in storytelling, querying logic, and content generation.
-- 💡 Dashboard designed to help stakeholders explore **season insights, team performance, and player impact.**
+    <div class="bento-card bento-small reveal">
+      <div class="bento-content">
+        <h3>The Velocity</h3>
+        <div class="bento-stat">3+</div>
+        <p>End-to-End Pipelines</p>
+      </div>
+    </div>
 
-<div class="project-image-wrapper auto-slider">
-  <div class="slider-track auto-slider-track">
-    <img src="/docs/assets/IPLP1.png" alt="IPL Overview">
-    <img src="/docs/assets/IPLP2.png" alt="Team Performance">
-    <img src="/docs/assets/IPLP3.png" alt="Players Performance">
-    <img src="/docs/assets/IPLP4.png" alt="Match Flow">
   </div>
 </div>
 
----
-
-### 🛍️ Sales Data Comparison & Analysis (2023–2024)
-
-<div class="links-grid">
-  <a href="/projects/sales-data-analysis/" class="link-card">
-    <i class="fa-solid fa-arrow-right"></i> View Full Project
-  </a>
-  <a href="https://github.com/Chiragsuri/Sales-Data-Analysis" target="_blank" class="link-card">
-    <i class="fa-brands fa-github"></i> View on GitHub
-  </a>
-</div>
-
-- 🐍 Created realistic **synthetic sales data** for 2023 and 2024 using `Faker`, `NumPy`, and Python logic blocks.
-- 🧹 Cleaned and structured datasets to match realistic product, customer, and date patterns.
-- 📊 Built a **multi-page Power BI dashboard** with maps, tooltips, slicers, KPIs, and charts.
-- 🤖 Used **ChatGPT** as a co-pilot for debugging, markdown writing, and visual planning.
-- 🔁 Focused on understanding **growth trends**, top customers, and product performance.
-
-<div class="project-image-wrapper auto-slider">
-  <div class="slider-track auto-slider-track">
-    <img src="/docs/assets/SalesDataKPI.png" alt="Sales KPI Dashboard">
-    <img src="/docs/assets/SalesDataComparison.png" alt="Comparison Analysis View">
-    <img src="/docs/assets/SalesDataToolTip.png" alt="Tooltip Qtr-wise Summary">
+<div class="impact-sliver reveal">
+  <div class="sliver-item">
+    <span class="sliver-val">800K+</span>
+    <span class="sliver-lab">Records Processed</span>
+  </div>
+  <div class="sliver-divider"></div>
+  <div class="sliver-item">
+    <span class="sliver-val">85%</span>
+    <span class="sliver-lab">False Alert Reduction</span>
+  </div>
+  <div class="sliver-divider"></div>
+  <div class="sliver-item">
+    <span class="sliver-val">30%</span>
+    <span class="sliver-lab">Faster Reporting</span>
   </div>
 </div>
 
----
+<div class="section" id="work">
+  <div class="section-header">
+    <i class="fa-solid fa-briefcase"></i>
+    <h2>Strategic Experience</h2>
+  </div>
 
-### ⚽ Football Striker Performance Analysis
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h3>Research Analyst</h3>
+          <span class="timeline-date">Jan 2024 – Jun 2024</span>
+        </div>
+        <p class="timeline-company">GreyB Research Pvt. Ltd. — Mohali, Punjab</p>
+        <ul class="timeline-bullets">
+          <li>Secured <strong>PPO (7 LPA)</strong> by delivering high-impact results across 30+ client projects.</li>
+          <li>Built a SQL-based classification system for <strong>30k+ patent documents</strong>.</li>
+          <li>Designed a Tier-scoring framework reducing review cycles by <strong>25%</strong>.</li>
+        </ul>
+      </div>
+    </div>
 
-<div class="links-grid">
-  <a href="/projects/football-striker/" class="link-card">
-    <i class="fa-solid fa-arrow-right"></i> View Full Project
-  </a>
-  <a href="https://github.com/Chiragsuri/Football-Striker-Performance" target="_blank" class="link-card">
-    <i class="fa-brands fa-github"></i> View on GitHub
-  </a>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <div class="timeline-header">
+          <h3>Independent Strategic Projects</h3>
+          <span class="timeline-date">Jul 2024 – Present</span>
+        </div>
+        <p class="timeline-company">Self-Directed Learning — Chandigarh, India</p>
+        <ul class="timeline-bullets">
+          <li>Achieved <strong>96.06 percentile</strong> on CAT 2024.</li>
+          <li>Developed <strong>3 end-to-end analytics pipelines</strong> for 800K+ records.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-- 🧠 Explored **what separates an average striker from an exceptional one** using data on 500 professional footballers.
-- 🧪 Used **Python (pandas, seaborn, matplotlib, sklearn, statsmodels)** for EDA, hypothesis testing, clustering, and logistic regression.
-- 🧹 Applied encoding, imputation, and scaling techniques for preprocessing.
-- 📈 Clustered players into "**Top Strikers**" and "**Regular Strikers**" using K-Means.
-- 🤖 Leveraged **Generative AI (ChatGPT)** to validate logic, speed up exploration, and clean documentation.
+<div class="section">
+  <div class="section-header">
+    <i class="fa-solid fa-graduation-cap"></i>
+    <h2>Education</h2>
+  </div>
 
-<img src="/docs/assets/FootballStriker.png" alt="Football Striker Dashboard" class="homepage-img">
-
----
-
-### 🏠 House Sales Analysis Dashboard
-
-<div class="links-grid">
-  <a href="/projects/house-sales-analysis/" class="link-card">
-    <i class="fa-solid fa-arrow-right"></i> View Full Project
-  </a>
-  <a href="https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales" target="_blank" class="link-card">
-    <i class="fa-solid fa-chart-simple"></i> View on Tableau
-  </a>
+  <div class="edu-table-container reveal">
+    <table class="edu-table">
+      <thead>
+        <tr>
+          <th>Exam / Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Common Admission Test (CAT)</td>
+          <td>IIMs</td>
+          <td>2024</td>
+          <td>Percentile: 96.06</td>
+        </tr>
+        <tr>
+          <td>B.E., Electronics & Communication (ECE)</td>
+          <td>UIET, Panjab University</td>
+          <td>2024</td>
+          <td>CGPA: 8.59</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 
-- 📊 Designed an **interactive Tableau dashboard** to analyze house sales in King County.
-- 🎯 Implemented **filters and slicers** for dynamic insights into pricing, sales trends, and demographics.
-- 🗺️ Used **maps, KPIs, and bar charts** for visual exploration.
-- 🧑‍💼 Tailored for **real estate stakeholders** to derive actionable insights.
+<div class="section">
+  <div class="section-header">
+    <i class="fa-solid fa-folder-open"></i>
+    <h2>Featured Case Studies</h2>
+  </div>
 
-<img src="/docs/assets/HouseSales.png" alt="House Sales Dashboard" class="homepage-img">
+  <div class="project-hover-grid reveal">
+    <div class="project-hover-card">
+      <img src="/docs/assets/SHM_Dashboard1.png" alt="Sales Health Monitor">
+      <div class="project-hover-overlay">
+        <h3 class="project-hover-title">Retail Sales Revenue & Anomaly Detection</h3>
+      </div>
+    </div>
 
----
+    <div class="project-hover-card">
+      <img src="/docs/assets/IPLP1.png" alt="Performance Forecasting">
+      <div class="project-hover-overlay">
+        <h3 class="project-hover-title">Performance Forecasting Model</h3>
+      </div>
+    </div>
+
+    <div class="project-hover-card">
+      <img src="/docs/assets/FootballStriker.png" alt="Football Striker Analysis">
+      <div class="project-hover-overlay">
+        <h3 class="project-hover-title">Football Striker Segmentation</h3>
+      </div>
+    </div>
+
+  </div>
+</div>
 
 <div class="cert-footer-nav">
-  <a href="/projects/" class="footer-btn"><i class="fa-solid fa-folder-open"></i> See Projects</a>
+  <a href="/projects/" class="footer-btn"><i class="fa-solid fa-folder-open"></i> See All Projects</a>
   <a href="/certifications/" class="footer-btn"><i class="fa-solid fa-graduation-cap"></i> See Certifications</a>
 </div>

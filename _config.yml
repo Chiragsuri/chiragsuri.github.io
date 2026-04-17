@@ -60,7 +60,7 @@ plugins:
 author:
   name: "Chirag Suri"
   avatar: "/docs/assets/Chirag_Pic.png"
-  bio: "Aspiring Data Analyst - Passionate about insights, dashboards, and the game of cricket."
+  bio: "Data Analyst turning messy data into decisions leadership can act on. 40% faster data retrieval, 85% reduction in false alerts, 25% faster reporting across 800K+ records."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
@@ -88,14 +88,6 @@ footer:
       url: "ue205030.chirag.ece@gmail.com"
 
 # Collections
-# Collections are a way to group related content together. They can be used
-# to create custom content types, such as projects, portfolios, or any other
-# type of content that doesn't fit into the standard Jekyll post or page
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name/
-
 defaults:
   # _posts
   - scope:
@@ -103,29 +95,37 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      classes: wide
+      sidebar: false
+      author_profile: false
       read_time: true
       comments: true
       share: true
       related: true
       header:
         anchor: false
+
   # _pages
   - scope:
       path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: true
+      classes: wide
+      sidebar: false
+      author_profile: false
       header:
-        anchor: false #for disabling perma links to every header present in text
+        anchor: false
+
   # _projects
   - scope:
       path: ""
       type: projects
     values:
       layout: single
-      author_profile: true
+      classes: wide
+      sidebar: false
+      author_profile: false
       share: true
 
 category_archive:
