@@ -4,187 +4,136 @@ author_profile: false
 classes: wide
 ---
 
-<div class="hero-section reveal">
-  <div class="hero-blob blob-1"></div>
-  <div class="hero-blob blob-2"></div>
-  <div class="hero-blob blob-3"></div>
-  <div class="hero-content">
-    <h1 class="hero-name">Chirag Suri</h1>
-    <p class="hero-role">Data Professional & Aspiring Strategist</p>
-    <p class="hero-bio">Turning complex data into strategic assets. I bridge the gap between raw technical pipelines and executive decision-making to drive measurable business impact.</p>
-    <div class="hero-links">
-      <a href="#work" class="hero-btn hero-btn-primary">Explore Work</a>
-      <a href="https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_ID" target="_blank" class="hero-btn hero-btn-secondary">View CV</a>
+<div class="hero-wrapper">
+  <div class="hero-split">
+    <div class="hero-left reveal">
+      <div class="hero-eyebrow">Data &middot; Analytics &middot; Consulting</div>
+      <h1 class="hero-title">Hi, I'm Chirag.<br><span class="highlight">Data Strategist.</span></h1>
+      <p class="hero-bio">I build the pipeline, find what matters inside it, and hand leadership something they can act on. The goal has always been consulting - which is just the same work with a seat at the table.</p>
+      <div class="hero-action">
+        <a href="#work" class="btn btn-primary">Latest Works</a>
+        <a href="https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_ID" target="_blank" class="btn btn-outline">Download CV</a>
+      </div>
     </div>
+    
+    <div class="hero-right reveal-stagger visible">
+      <div class="image-fade-left"></div>
+      <div class="image-fade-bottom"></div>
+      <img src="/docs/assets/Chirag_frontpage.png" alt="Chirag Suri Portrait">
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <div class="scroll-line"></div>
   </div>
 </div>
 
-<div class="section">
-  <div class="bento-grid">
-    <div class="bento-card bento-large reveal">
-      <div class="bento-content">
-        <h3>The Focus</h3>
-        <p>Specializing in the intersection of data engineering and strategic analytics. I build systems that reduce noise and surface the critical signals leadership needs to scale operations and optimize revenue.</p>
-      </div>
-    </div>
-
-    <div class="bento-card bento-medium reveal">
-      <div class="bento-content">
-        <h3>The Arsenal</h3>
-        <div class="tech-icons">
-          <span class="tech-badge">Python</span>
-          <span class="tech-badge">SQL</span>
-          <span class="tech-badge">Power BI</span>
-          <span class="tech-badge">Scikit-learn</span>
-          <span class="tech-badge">Pandas</span>
-          <span class="tech-badge">ETL</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="bento-card bento-small reveal">
-      <div class="bento-content">
-        <h3>The Edge</h3>
-        <div class="bento-stat">96.06%</div>
-        <p>CAT 2024: Top 4% Nationally</p>
-      </div>
-    </div>
-
-    <div class="bento-card bento-small reveal">
-      <div class="bento-content">
-        <h3>The Velocity</h3>
-        <div class="bento-stat">3+</div>
-        <p>End-to-End Pipelines</p>
-      </div>
-    </div>
-
+<div class="metrics-bar reveal">
+  <div class="metric">
+    <span class="m-val" data-target="40" data-suffix="%">0%</span>
+    <span class="m-label">Faster Data Retrieval</span>
+  </div>
+  <div class="m-divider"></div>
+  <div class="metric">
+    <span class="m-val" data-target="85" data-suffix="%">0%</span>
+    <span class="m-label">False Alert Reduction</span>
+  </div>
+  <div class="m-divider"></div>
+  <div class="metric">
+    <span class="m-val" data-target="96.06" data-suffix="%">0%</span>
+    <span class="m-label">CAT 2024 (Top 4%)</span>
   </div>
 </div>
 
-<div class="impact-sliver reveal">
-  <div class="sliver-item">
-    <span class="sliver-val">800K+</span>
-    <span class="sliver-lab">Records Processed</span>
-  </div>
-  <div class="sliver-divider"></div>
-  <div class="sliver-item">
-    <span class="sliver-val">85%</span>
-    <span class="sliver-lab">False Alert Reduction</span>
-  </div>
-  <div class="sliver-divider"></div>
-  <div class="sliver-item">
-    <span class="sliver-val">30%</span>
-    <span class="sliver-lab">Faster Reporting</span>
-  </div>
+<div class="tech-stack reveal">
+  <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
+  <div class="tech-item"><i class="fa-solid fa-database"></i> SQL</div>
+  <div class="tech-item"><i class="fa-solid fa-chart-pie"></i> Power BI</div>
+  <div class="tech-item"><i class="fa-solid fa-brain"></i> Predictive AI</div>
+  <div class="tech-item"><i class="fa-solid fa-network-wired"></i> ETL Pipelines</div>
+  <div class="tech-item"><i class="fa-solid fa-chart-line"></i> Statistical Modeling</div>
 </div>
 
 <div class="section" id="work">
-  <div class="section-header">
-    <i class="fa-solid fa-briefcase"></i>
-    <h2>Strategic Experience</h2>
+  <div class="section-header reveal">
+    <h2 class="section-title">Featured Work.</h2>
   </div>
-
-  <div class="timeline">
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <div class="timeline-header">
-          <h3>Research Analyst</h3>
-          <span class="timeline-date">Jan 2024 – Jun 2024</span>
-        </div>
-        <p class="timeline-company">GreyB Research Pvt. Ltd. — Mohali, Punjab</p>
-        <ul class="timeline-bullets">
-          <li>Secured <strong>PPO (7 LPA)</strong> by delivering high-impact results across 30+ client projects.</li>
-          <li>Built a SQL-based classification system for <strong>30k+ patent documents</strong>.</li>
-          <li>Designed a Tier-scoring framework reducing review cycles by <strong>25%</strong>.</li>
-        </ul>
+  <div class="project-grid reveal">
+    <a href="/shm/" class="project-card">
+      <img src="/docs/assets/SHM_Dashboard1.png" alt="Retail Anomaly Detection">
+      <div class="card-overlay">
+        <h4>Retail Sales & Anomaly Detection</h4>
+        <p>Cut query execution by 20% through pipeline engineering.</p>
       </div>
-    </div>
-
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-content">
-        <div class="timeline-header">
-          <h3>Independent Strategic Projects</h3>
-          <span class="timeline-date">Jul 2024 – Present</span>
-        </div>
-        <p class="timeline-company">Self-Directed Learning — Chandigarh, India</p>
-        <ul class="timeline-bullets">
-          <li>Achieved <strong>96.06 percentile</strong> on CAT 2024.</li>
-          <li>Developed <strong>3 end-to-end analytics pipelines</strong> for 800K+ records.</li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-header">
-    <i class="fa-solid fa-graduation-cap"></i>
-    <h2>Education</h2>
-  </div>
-
-  <div class="edu-table-container reveal">
-    <table class="edu-table">
-      <thead>
-        <tr>
-          <th>Exam / Degree</th>
-          <th>Institution</th>
-          <th>Year</th>
-          <th>Score</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Common Admission Test (CAT)</td>
-          <td>IIMs</td>
-          <td>2024</td>
-          <td>Percentile: 96.06</td>
-        </tr>
-        <tr>
-          <td>B.E., Electronics & Communication (ECE)</td>
-          <td>UIET, Panjab University</td>
-          <td>2024</td>
-          <td>CGPA: 8.59</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<div class="section">
-  <div class="section-header">
-    <i class="fa-solid fa-folder-open"></i>
-    <h2>Featured Case Studies</h2>
-  </div>
-
-  <div class="project-hover-grid reveal">
-    <div class="project-hover-card">
-      <img src="/docs/assets/SHM_Dashboard1.png" alt="Sales Health Monitor">
-      <div class="project-hover-overlay">
-        <h3 class="project-hover-title">Retail Sales Revenue & Anomaly Detection</h3>
-      </div>
-    </div>
-
-    <div class="project-hover-card">
+    </a>
+    
+    <a href="/ipl/" class="project-card">
       <img src="/docs/assets/IPLP1.png" alt="Performance Forecasting">
-      <div class="project-hover-overlay">
-        <h3 class="project-hover-title">Performance Forecasting Model</h3>
+      <div class="card-overlay">
+        <h4>Performance Forecasting</h4>
+        <p>Automated 10+ KPIs across 145 datasets for executive reporting.</p>
       </div>
-    </div>
+    </a>
 
-    <div class="project-hover-card">
-      <img src="/docs/assets/FootballStriker.png" alt="Football Striker Analysis">
-      <div class="project-hover-overlay">
-        <h3 class="project-hover-title">Football Striker Segmentation</h3>
+    <a href="/football/" class="project-card">
+      <img src="/docs/assets/FootballStriker.png" alt="Striker Segmentation">
+      <div class="card-overlay">
+        <h4>Football Striker Segmentation</h4>
+        <p>Classified 500 player profiles using predictive K-Means modeling.</p>
       </div>
-    </div>
+    </a>
 
   </div>
 </div>
 
-<div class="cert-footer-nav">
-  <a href="/projects/" class="footer-btn"><i class="fa-solid fa-folder-open"></i> See All Projects</a>
-  <a href="/certifications/" class="footer-btn"><i class="fa-solid fa-graduation-cap"></i> See Certifications</a>
-</div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. IntersectionObserver for Scroll Reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('active');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+  // 2. IntersectionObserver for Metric Count-Up Animation
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseFloat(el.getAttribute('data-target'));
+        const suffix = el.getAttribute('data-suffix') || '';
+        const duration = 1500; // Adjust speed here (1.5 seconds)
+        let startTimestamp = null;
+
+        const step = (timestamp) => {
+          if (!startTimestamp) startTimestamp = timestamp;
+          const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+          // easeOutQuart curve for natural deceleration
+          const easeProgress = 1 - Math.pow(1 - progress, 4);
+          const current = easeProgress * target;
+          
+          const isFloat = target % 1 !== 0;
+          el.innerText = (isFloat ? current.toFixed(1) : Math.floor(current)) + suffix;
+
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          } else {
+            el.innerText = target + suffix; // Ensure it ends exactly on target
+          }
+        };
+        
+        window.requestAnimationFrame(step);
+        countObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('.m-val').forEach(el => countObserver.observe(el));
+});
+</script>
