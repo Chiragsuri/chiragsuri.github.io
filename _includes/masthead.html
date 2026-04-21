@@ -1,0 +1,25 @@
+<header class="custom-masthead" role="banner">
+  <nav class="greedy-nav">
+    <a href="/" class="site-title">Chirag Suri</a>
+    <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
+    <ul class="visible-links">
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/certifications/">Certifications</a></li>
+      <li><a href="/textUtils/">TextUtils</a></li>
+      <li><a href="/about/">About</a></li>
+    </ul>
+  </nav>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.querySelector(".nav-toggle");
+    const menu = document.querySelector(".visible-links");
+
+    if (toggle && menu) {
+      toggle.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    }
+  });
+</script>

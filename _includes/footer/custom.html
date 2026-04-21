@@ -1,4 +1,35 @@
 <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".custom-masthead");
+    if (header) {
+      window.addEventListener("scroll", () => {
+        header.classList.toggle("scrolled", window.scrollY > 80);
+      });
+    }
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    if (scrollBtn) {
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 400) {
+          scrollBtn.classList.add("visible");
+        } else {
+          scrollBtn.classList.remove("visible");
+        }
+      });
+
+      scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    }
+  });
+</script>
+
+<script>
   window.addEventListener("load", function () {
     const sliders = document.querySelectorAll(".auto-slider-track");
 
@@ -37,7 +68,7 @@
   document.querySelectorAll(".follow-btn").forEach((btn) =>
     btn.addEventListener("click", () => {
       btn.parentElement.classList.toggle("active");
-    })
+    }),
   );
 </script>
 
@@ -63,7 +94,7 @@
       function (error) {
         showToast("Failed to send message. Please try again.", "error");
         console.error(error);
-      }
+      },
     );
   });
 
