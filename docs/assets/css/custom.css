@@ -1,5 +1,5 @@
 /* ==================================
-   custom.css - "Executive Consultant" Master Edition
+   custom.css - "Executive Consultant" Edition
    ================================== */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap");
 
@@ -27,40 +27,6 @@ body {
   padding: 0 !important;
   overflow-x: hidden;
   width: 100%;
-  position: relative;
-}
-
-/* Global Blueprint Grid & Ambient Shadow */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(
-    circle at 70% 30%,
-    rgba(200, 169, 110, 0.05) 0%,
-    transparent 60%
-  );
-  z-index: -2;
-  pointer-events: none;
-}
-body::after {
-  content: "";
-  position: fixed;
-  inset: 0;
-  /* Refined intersecting line grid */
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 36px 36px;
-  z-index: -3;
-  pointer-events: none;
-  /* Fades the grid out near the edges of the screen */
-  -webkit-mask-image: radial-gradient(
-    ellipse at 50% 40%,
-    black 30%,
-    transparent 80%
-  );
-  mask-image: radial-gradient(ellipse at 50% 40%, black 30%, transparent 80%);
 }
 
 #main,
@@ -74,7 +40,6 @@ body::after {
   width: 100% !important;
   padding: 0 !important;
   margin: 0 !important;
-  background: transparent !important;
 }
 
 .page__content::after,
