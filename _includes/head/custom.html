@@ -8,10 +8,7 @@
   rel="stylesheet"
   href="{{ '/docs/assets/css/custom.css' | relative_url }}"
 />
-<link
-  rel="stylesheet"
-  href="{{ '/docs/assets/css/projects.css' | relative_url }}"
-/>
+
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -32,8 +29,6 @@
 site.title }} {% elsif page.title %} {{ page.title }} | {{ site.title }} {% else
 %} {{ site.title }} {% endif %} {% endcapture %}
 <title>{{ custom_title | strip_newlines }}</title>
-
-<link rel="stylesheet" href="{{ '/docs/assets/css/nav.css' | relative_url }}" />
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
