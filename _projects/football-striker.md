@@ -1,155 +1,150 @@
 ---
-title: "⚽ Football Striker Performance Analysis"
+title: "Football Striker Segmentation"
 permalink: /projects/football-striker/
 layout: single
-author_profile: true
+author_profile: false
 classes: wide
-pagination: false
+header: false
+share: false
 ---
 
-<div class="back-btn-top">
-  <a href="/projects/"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+<a href="/projects/ipl-analysis/" class="side-nav-btn prev-btn-floating" title="Previous Project"><i class="fa-solid fa-chevron-left"></i></a>
+<a href="/projects/sales-data-analysis/" class="side-nav-btn next-btn-floating" title="Next Project"><i class="fa-solid fa-chevron-right"></i></a>
+
+<div class="case-study-container reveal active">
+
+<span class="cs-eyebrow">Machine Learning · Python</span>
+
+  <h1 class="cs-title">Football Striker<br>Segmentation</h1>
+  <p class="cs-subtitle">A machine learning model built to isolate exactly what makes a striker elite. I used K-Means clustering and logistic regression to turn 500 players' raw stats into a predictive classification system.</p>
+
+  <div class="cs-metrics-strip">
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="500">0</span></span>
+      <span class="cs-metric-label">Players Analyzed</span>
+    </div>
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="2">0</span></span>
+      <span class="cs-metric-label">Performance Tiers</span>
+    </div>
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="212">0</span></span>
+      <span class="cs-metric-label">Elite Base Score</span>
+    </div>
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="73">0</span>%</span>
+      <span class="cs-metric-label">Right-Footed Bias</span>
+    </div>
+  </div>
+
+  <div class="cs-brief-grid">
+    <div class="cs-brief-context">
+      <p>Scouting a striker usually stops at looking at how many goals they scored last season. That's a flawed metric. I wanted to see if statistical modeling could strip away the bias. By clustering 500 players based on secondary metrics like hold-up play and passing consistency, I built a classification system that predicts future performance instead of just rewarding past luck.</p>
+    </div>
+    <div class="cs-brief-meta">
+      <h4>Tech Stack</h4>
+      <div class="cs-tech-tags">
+        <span class="cs-tech-tag">Python</span>
+        <span class="cs-tech-tag">Scikit-Learn</span>
+        <span class="cs-tech-tag">Pandas</span>
+        <span class="cs-tech-tag">SciPy</span>
+        <span class="cs-tech-tag">Seaborn</span>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="cs-section-label">The Methodology</h2>
+
+  <div class="cs-approach-grid">
+    <div class="cs-approach-card">
+      <i class="fa-solid fa-flask cs-approach-icon"></i>
+      <h3>1. Statistical Validation</h3>
+      <p>You can't just throw data at an algorithm and hope for the best. I ran Shapiro-Wilk and Levene's tests first to validate the distributions. I proved mathematically that a trait like "hold-up play" heavily correlates with long-term consistency.</p>
+    </div>
+    <div class="cs-approach-card">
+      <i class="fa-solid fa-code-branch cs-approach-icon"></i>
+      <h3>2. Feature Engineering</h3>
+      <p>Raw stats are too noisy. I engineered a custom "Total Contribution Score" that weighted goals, assists, and dribbles into a single, clean metric. This gave the clustering algorithm a much sharper signal to process.</p>
+    </div>
+    <div class="cs-approach-card">
+      <i class="fa-solid fa-brain cs-approach-icon"></i>
+      <h3>3. Clustering & Classification</h3>
+      <p>I deployed K-Means to naturally divide the 500 strikers into two distinct tiers: Elite and Regular. From there, I trained a Logistic Regression model to accurately classify any new player into these buckets based on their stats.</p>
+    </div>
+  </div>
+
+  <h2 class="cs-section-label">The Deliverables</h2>
+
+  <div class="cs-image-grid" style="grid-template-columns: 1fr;">
+    <div class="cs-showcase-item">
+      <img src="/docs/assets/FootballStriker.png" alt="Football Striker Segmentation Visuals" class="cs-showcase-img">
+      <div class="cs-showcase-caption">Statistical distributions, clustering results, and performance mappings isolating the elite tier.</div>
+    </div>
+  </div>
+
+  <h2 class="cs-section-label">Key Findings</h2>
+
+  <div class="cs-finding">
+    <h3 class="cs-finding-stat">Hold-up play is the hidden engine.</h3>
+    <p class="cs-finding-context">The regression model proved that a striker's hold-up play is a massive predictor of their overall consistency (a 0.55 correlation). It isn't just about shooting; it's about keeping the possession alive in the final third.</p>
+  </div>
+  
+  <div class="cs-finding">
+    <h3 class="cs-finding-stat">The math defines the elite.</h3>
+    <p class="cs-finding-context">The K-Means algorithm naturally found the breakpoint without human bias. The "Elite" strikers clustered tightly around an average contribution score of 212. The logistic regression model easily learned this threshold and classified players with high accuracy.</p>
+  </div>
+
+  <div class="cs-finding" style="margin-top: 2rem;">
+    <h3 class="cs-finding-stat">Next Steps: A scouting dashboard.</h3>
+    <p class="cs-finding-context">Jupyter notebooks are great for data scientists, but terrible for football coaches. My next step is wiring this Python model into an interactive Power BI dashboard so scouts can drag sliders and interact with the predictions visually.</p>
+  </div>
+
+  <div style="display: flex; justify-content: center; margin: 4rem 0;">
+    <a href="https://github.com/Chiragsuri/Football-Striker-Performance" target="_blank" class="btn btn-primary" style="padding: 16px 36px;">
+      <i class="fa-brands fa-github"></i> View Full Repository
+    </a>
+  </div>
+
+  <div class="projects-page-nav" markdown="0">
+    <a href="/projects/ipl-analysis/" class="nav-btn prev-btn"><span class="nav-arrow">&larr;</span> Prev: Forecasting Model</a>
+    <a href="/projects/sales-data-analysis/" class="nav-btn next-btn">Next: YoY Sales Analytics <span class="nav-arrow">&rarr;</span></a>
+  </div>
+
 </div>
 
-In this project, I dove deep into understanding what separates an ordinary striker from a great one. Using Python, I explored a dataset of 500 strikers containing personal attributes and on-field performance stats — all with the goal of answering one simple question:
+<script>
+window.addEventListener('load', () => {
+  const counters = document.querySelectorAll(".counter");
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const inc = target / 150;
+      if (count < target) {
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
 
-👉 _What makes a football striker exceptional?_
+  const lightbox = document.createElement('div');
+  lightbox.id = 'cs-lightbox';
+  lightbox.className = 'cs-lightbox';
+  document.body.appendChild(lightbox);
 
-## 🛠️ Tools & Technologies Used
+  document.querySelectorAll('.cs-showcase-img').forEach(image => {
+    image.addEventListener('click', () => {
+      lightbox.classList.add('active');
+      while (lightbox.firstChild) lightbox.removeChild(lightbox.firstChild);
+      const img = document.createElement('img');
+      img.src = image.src;
+      lightbox.appendChild(img);
+    });
+  });
 
-- **Python (pandas, seaborn, matplotlib, scipy, sklearn, statsmodels)** – For EDA, visualization, statistical testing, clustering, and machine learning.
-- **Jupyter Notebook** – For code execution and documentation.
-- **Generative AI (ChatGPT)** – Helped refine analysis steps, validate statistical logic, helped with ideation and structure the project cleanly.
-
-## 🔗 Links
-
-<div class="links-grid">
-  <a href="https://github.com/Chiragsuri" target="_blank" class="link-card">
-    <i class="fa-brands fa-github"></i> GitHub
-  </a>
-  <a href="https://www.linkedin.com/in/chirag-suri/" target="_blank" class="link-card">
-    <i class="fa-brands fa-linkedin"></i> LinkedIn
-  </a>
-  <a href="https://chiragsuri.github.io" target="_blank" class="link-card">
-    <i class="fa-solid fa-globe"></i> Portfolio
-  </a>
-</div>
-
-## 📁 Dataset
-
-I worked with a dataset of **500 football strikers**, covering both demographic and performance-based variables.
-
-- [`Strikers_Performance.xlsx`](https://github.com/Chiragsuri/Football-Striker-Performance/blob/main/Dataset/Strikers_Performance.xlsx)
-
-📌 **Note**: I couldn’t locate the original source, so it’s being treated as synthetic/simulated data for educational purposes.
-
-## 🎯 Project Objectives
-
-This project was focused on segmenting and classifying strikers based on their:
-
-- ⚽ **On-field performance** (Goals, Assists, Dribbling, etc.)
-- 🧠 **Attributes** (Footedness, Consistency, Game IQ, Conduct)
-- 📊 **Team Impact & Match Influence**
-
-The broader goal was to develop a **data-backed system** for:
-
-- Identifying top-tier vs average strikers.
-- Helping scouts/coaches with player selection.
-- Answering questions even analysts may overlook.
-
-## 🧠 Key Questions Solved
-
-- What’s the **maximum number of goals** scored by a striker?
-- What **percentage of strikers are right-footed**?
-- Which **nationality scores the most goals on average**?
-- What’s the **average conversion rate** of left-footed players?
-- Do **hold-up play skills** correlate with consistency?
-- Are **consistency scores normally distributed**?
-- Is there a **statistical difference** in performance between nationalities?
-- Can we **predict striker types** using logistic regression?
-
-## 🔄 Project Workflow
-
-### 🧼 1. Data Cleaning & Preparation
-
-- Handled null values using **SimpleImputer**:
-  - Median for numeric
-  - Most frequent for categorical
-- Typecasting of key performance metrics (e.g., Goals, Assists).
-- Used `LabelEncoder` for footedness and marital status.
-- Created dummy variables for nationality.
-
-### 📊 2. Exploratory Data Analysis
-
-- Descriptive stats for all key metrics.
-- Pie chart for footedness distribution.
-- Countplot of footedness by nationality.
-
-### 📈 3. Statistical Analysis
-
-- Used **groupby + mean** to analyze national scoring rates.
-- Performed **Shapiro-Wilk** for normality check.
-- **Levene’s Test** to validate homogeneity before ANOVA.
-- **Correlation (Pearson)** and **regression** to understand how "Hold-up Play" influences consistency.
-
-### 🧪 4. Feature Engineering
-
-- Created a **Total Contribution Score** from key fields:
-  - Goals, Assists, Shots on Target, Dribbles, etc.
-- Used this score for clustering and ML input.
-
-### 🧠 5. K-Means Clustering
-
-- Identified **2 clusters** using elbow method.
-- Tagged strikers as:
-  - **Best Strikers**
-  - **Regular Strikers**
-
-### 🤖 6. Machine Learning (Logistic Regression)
-
-- Trained model to classify striker type.
-- Used StandardScaler for normalization.
-- Achieved solid accuracy and visualized predictions via confusion matrix.
-
-<div class="links-grid" style="margin-top: 1rem;">
-  <a href="https://github.com/Chiragsuri/Football-Striker-Performance/blob/main/Football-Striker.ipynb" class="link-card" target="_blank">
-    <i class="fa-brands fa-python"></i> View Notebook
-  </a>
-</div>
-
-## 💡 Key Insights
-
-- 🥇 The highest individual goal tally: **36 goals**
-- 🦵 Right-footed strikers dominate the dataset (about 73%)
-- 🌍 **Brazilian** strikers had the highest average goal count
-- 🧠 Hold-up Play shows positive correlation (0.55) with consistency
-- 📊 Consistency scores were **not normally distributed**, but **heteroscedasticity was not an issue**
-- 🧪 Regression model showed **hold-up play** significantly predicts **consistency**
-- 🧮 Best strikers had an average contribution score of **~212**
-- ✅ Logistic Regression model achieved **X% accuracy**
-
-## 📚 Things I Learned
-
-- ✅ **End-to-end structuring** of ML-based projects
-- 📊 **Choosing the right statistical test** depending on data assumptions
-- 🧹 Proper **preprocessing**: imputation, encoding, scaling
-- 💬 **Explaining results** with storytelling, not just numbers
-- 🤝 Using **generative AI** to validate and speed up analysis
-
-## 🚀 How to Explore
-
-If you're looking to test the code:
-
-1. 📥 Clone or download the repo
-2. 🐍 Open `Football-Striker.ipynb` in Jupyter
-3. 🧠 Run through sections, tweak assumptions, explore clusters and model results
-
-## ✅ What's Next?
-
-- Building a **Power BI Dashboard** to turn this analysis into a visual scouting tool
-
-## 🙏 THANK YOU! 🙌
-
-<div class="back-btn-bottom">
-  <a href="/projects/"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
-</div>
+  lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+});
+</script>

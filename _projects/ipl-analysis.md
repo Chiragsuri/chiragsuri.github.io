@@ -1,195 +1,162 @@
 ---
-title: "🏏 IPL Data Analysis (Season 2024 and 2025)"
+title: "Performance Forecasting Model"
 permalink: /projects/ipl-analysis/
 layout: single
-author_profile: true
+author_profile: false
 classes: wide
-pagination: false
+header: false
+share: false
 ---
 
-<div class="back-btn-top">
-  <a href="/projects/"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
+<a href="/projects/sales-health-monitor/" class="side-nav-btn prev-btn-floating" title="Previous Project"><i class="fa-solid fa-chevron-left"></i></a>
+<a href="/projects/football-striker/" class="side-nav-btn next-btn-floating" title="Next Project"><i class="fa-solid fa-chevron-right"></i></a>
+
+<div class="case-study-container reveal active">
+
+<span class="cs-eyebrow">Analytics · Strategy</span>
+
+  <h1 class="cs-title">Performance Forecasting<br>Model</h1>
+  <p class="cs-subtitle">I built an end-to-end sports analytics engine to see if data could explain match outcomes better than basic cricket intuition. By chewing through two seasons of ball-by-ball logs, this dashboard strips away the noise to highlight the tactical decisions that actually win games.</p>
+
+  <div class="cs-metrics-strip">
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="145">0</span></span>
+      <span class="cs-metric-label">Datasets Processed</span>
+    </div>
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="10">0</span>+</span>
+      <span class="cs-metric-label">KPIs Tracked</span>
+    </div>
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="2">0</span></span>
+      <span class="cs-metric-label">Seasons Analyzed</span>
+    </div>
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="4">0</span></span>
+      <span class="cs-metric-label">Dashboard Pages</span>
+    </div>
+  </div>
+
+  <div class="cs-brief-grid">
+    <div class="cs-brief-context">
+      <p>Most cricket analysis stops at batting averages and win rates. That's boring. I wanted to know if winning the toss actually matters, or what specific target score forces a batting collapse. To get there, I had to wrangle massive event logs into something a strategist could actually read at a glance without getting lost in the numbers.</p>
+    </div>
+    <div class="cs-brief-meta">
+      <h4>Tech Stack</h4>
+      <div class="cs-tech-tags">
+        <span class="cs-tech-tag">MySQL</span>
+        <span class="cs-tech-tag">Python</span>
+        <span class="cs-tech-tag">Pandas</span>
+        <span class="cs-tech-tag">Power BI</span>
+        <span class="cs-tech-tag">DAX</span>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="cs-section-label">The Methodology</h2>
+
+  <div class="cs-approach-grid">
+    <div class="cs-approach-card">
+      <i class="fa-solid fa-server cs-approach-icon"></i>
+      <h3>1. Data Engineering</h3>
+      <p>I pulled the raw ball-by-ball data and filtered it down to the 2024 and 2025 seasons using MySQL. I stripped out cancelled matches and playoff anomalies to build three clean reporting tables.</p>
+    </div>
+    <div class="cs-approach-card">
+      <i class="fa-solid fa-microchip cs-approach-icon"></i>
+      <h3>2. Exploratory Analysis</h3>
+      <p>Before building anything visual, I used Python to map the terrain. This is where the real story emerged-like seeing the exact dot-ball volume required to choke a run chase.</p>
+    </div>
+    <div class="cs-approach-card">
+      <i class="fa-solid fa-chart-line cs-approach-icon"></i>
+      <h3>3. Executive BI</h3>
+      <p>I built a four-page Power BI dashboard. Instead of relying on static charts, I used dynamic DAX functions so a user can slice the data by team or venue without breaking the views.</p>
+    </div>
+  </div>
+
+  <h2 class="cs-section-label">The Deliverables</h2>
+
+  <div class="cs-image-grid">
+    <div class="cs-showcase-item">
+      <img src="/docs/assets/IPLP1.png" alt="Tournament Overview" class="cs-showcase-img">
+      <div class="cs-showcase-caption">Dashboard 1: Tournament Overview, mapping team venues and toss-winner impact.</div>
+    </div>
+    <div class="cs-showcase-item">
+      <img src="/docs/assets/IPLP2.png" alt="Team Performance" class="cs-showcase-img">
+      <div class="cs-showcase-caption">Dashboard 2: Team Performance, tracking boundary hits, dot ball flow, and fielding stats.</div>
+    </div>
+    <div class="cs-showcase-item">
+      <img src="/docs/assets/IPLP3.png" alt="Player Intelligence" class="cs-showcase-img">
+      <div class="cs-showcase-caption">Dashboard 3: Player Intelligence, highlighting top run scorers and wicket takers.</div>
+    </div>
+    <div class="cs-showcase-item">
+      <img src="/docs/assets/IPLP4.png" alt="Match Behaviour" class="cs-showcase-img">
+      <div class="cs-showcase-caption">Dashboard 4: Match Behaviour, analyzing DRS review success and target score distributions.</div>
+    </div>
+  </div>
+
+  <h2 class="cs-section-label">Key Findings</h2>
+
+  <div class="cs-finding">
+    <h3 class="cs-finding-stat">Toss wins don't equal match wins.</h3>
+    <p class="cs-finding-context">Everyone assumes the toss dictates the game. The data proves it doesn't. Execution, specifically maintaining a high dot-ball percentage, correlates much stronger with a victory than winning the coin flip.</p>
+  </div>
+  
+  <div class="cs-finding">
+    <h3 class="cs-finding-stat">200 is the new normal.</h3>
+    <p class="cs-finding-context">The run environment has shifted heavily. Teams routinely chased targets over 200, which entirely changes how middle-order batters have to pace their innings.</p>
+  </div>
+
+  <div class="cs-finding" style="margin-top: 2rem;">
+    <h3 class="cs-finding-stat">Next Steps: Predictive modeling.</h3>
+    <p class="cs-finding-context">Right now, this dashboard looks backward. My next move is wiring up Scikit-learn to predict match outcomes live based on real-time stadium metrics.</p>
+  </div>
+
+  <div style="display: flex; justify-content: center; margin: 4rem 0;">
+    <a href="https://github.com/Chiragsuri/IPL_Analysis" target="_blank" class="btn btn-primary" style="padding: 16px 36px;">
+      <i class="fa-brands fa-github"></i> View Full Repository
+    </a>
+  </div>
+
+  <div class="projects-page-nav" markdown="0">
+    <a href="/projects/sales-health-monitor/" class="nav-btn prev-btn"><span class="nav-arrow">&larr;</span> Prev: Retail Revenue</a>
+    <a href="/projects/football-striker/" class="nav-btn next-btn">Next: Striker Segments <span class="nav-arrow">&rarr;</span></a>
+  </div>
+
 </div>
 
-A data-driven project exploring player and team performances across the 2024 and 2025 IPL seasons — combining SQL, Python, Power BI, and Generative AI to break down everything from boundaries and catches to toss impact and review success.
+<script>
+window.addEventListener('load', () => {
+  const counters = document.querySelectorAll(".counter");
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const inc = target / 150;
+      if (count < target) {
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
+  });
 
-## 🛠️ Tools & Technologies Used
+  const lightbox = document.createElement('div');
+  lightbox.id = 'cs-lightbox';
+  lightbox.className = 'cs-lightbox';
+  document.body.appendChild(lightbox);
 
-- **SQL (MySQL)** – Used for slicing the main IPL dataset into filtered views for the 2024 and 2025 seasons.
-- **Python (pandas, matplotlib, seaborn)** – Exploratory Data Analysis, player performance trends, season-wise insights.
-- **Power BI** – Built a multi-page interactive dashboard with KPIs, slicers, trendlines, and maps.
-- **Generative AI (ChatGPT)** – Assisted in ideation, error handling, SQL optimisation, notebook documentation, visual design, and storytelling.
+  document.querySelectorAll('.cs-showcase-img').forEach(image => {
+    image.addEventListener('click', () => {
+      lightbox.classList.add('active');
+      while (lightbox.firstChild) lightbox.removeChild(lightbox.firstChild);
+      const img = document.createElement('img');
+      img.src = image.src;
+      lightbox.appendChild(img);
+    });
+  });
 
-## 🔗 Links
-
-<div class="links-grid">
-  <a href="https://github.com/Chiragsuri" target="_blank" class="link-card">
-    <i class="fa-brands fa-github"></i>
-    GitHub
-  </a>
-  <a href="https://www.linkedin.com/in/chirag-suri/" target="_blank" class="link-card">
-    <i class="fa-brands fa-linkedin"></i>
-    LinkedIn
-  </a>
-  <a href="https://chiragsuri.github.io" target="_blank" class="link-card">
-    <i class="fa-solid fa-globe"></i>
-    Portfolio
-  </a>
-</div>
-
-## 📁 Dataset
-
-The project started with a large **IPL Dataset** covering all IPL seasons. Using SQL, I derived three filtered datasets specifically for the 2024 and 2025 seasons:
-
-- [`ipl_filtered_24_25.csv`](https://github.com/Chiragsuri/IPL_Analysis/blob/main/Dataset/ipl_filtered_24_25.csv) – Ball-by-ball data for the 2024–25 seasons only
-- [`ipl_player_stats_24_25.csv`](https://github.com/Chiragsuri/IPL_Analysis/blob/main/Dataset/ipl_player_stats_24_25.csv) – Simplified version to track batter/bowler/wicket actions
-- [`ipl_summary_24_25.csv`](https://github.com/Chiragsuri/IPL_Analysis/blob/main/Dataset/ipl_summary_24_25.csv) – Match-level summary (toss winner, result, player of match)
-
-📎 **Original Source**:
-
-<div class="links-grid">
-<a href="https://www.kaggle.com/datasets/chaitu20/ipl-dataset2008-2025" class="link-card" target="_blank">
-<i class="fa-solid fa-database"></i> Kaggle</a>
-</div>
-
-## 🎯 Problem Statements / Goals
-
-This project wasn’t just about which team won more matches — it was about **uncovering patterns that aren’t obvious casually**, such as:
-
-- **How important is the toss** — does **winning it** actually increase **win%**?
-- Does **batting position** matter in **scoring runs**?
-- Which players are **consistent** but **overlooked**?
-- How **successful** are **DRS reviews** per team?
-- What’s the typical **target score range** teams face in **chases**?
-- Which teams are **tactically better** at **bowling dot balls**?
-- Do some teams **dominate in catches** or commit **fewer fielding errors**?
-- And lastly, in which **stadium** were **most IPL matches played** in those seasons?
-
-## 🧪 Project Workflow
-
-### <i class="fas fa-database"></i> SQL Phase
-
-- Used Filtering methods to create 3 tables from the master IPL dataset.
-- Removed cancelled matches and playoff outliers where needed.
-- Wrote queries to calculate:
-  <ul class="query-output-list">
-  <li><a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/MYSQL/Exported%20Query%20Datasets/most_runs_match.csv" target="_blank"><i class="fa-solid fa-file-lines"></i> Most Runs scored in a Single Match</a></li>
-  <li><a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/MYSQL/Exported%20Query%20Datasets/orange_cap_25.csv" target="_blank"><i class="fa-solid fa-file-lines"></i> Orange Cap Leaderboard</a></li>
-  <li><a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/MYSQL/Exported%20Query%20Datasets/purple_cap_25.csv" target="_blank"><i class="fa-solid fa-file-lines"></i> Purple Cap Leaderboard</a></li>
-  <li><a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/MYSQL/Exported%20Query%20Datasets/most_catches_25.csv" target="_blank"><i class="fa-solid fa-file-lines"></i> Most Catches by Players</a></li>
-  <li><a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/MYSQL/Exported%20Query%20Datasets/strike_rate_25.csv" target="_blank"><i class="fa-solid fa-file-lines"></i> Strike Rate of Top Batters</a></li>
-  <li><a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/MYSQL/Exported%20Query%20Datasets/economy_rate_25.csv" target="_blank"><i class="fa-solid fa-file-lines"></i> Economy Rates of Top Bowlers</a></li>
-  <li><a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/MYSQL/Exported%20Query%20Datasets/toss_win_impact.csv" target="_blank"><i class="fa-solid fa-file-lines"></i> Toss-Win Impact Summary</a></li>
-  <li><a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/MYSQL/Exported%20Query%20Datasets/player_of_match.csv" target="_blank"><i class="fa-solid fa-file-lines"></i> Player of the Match Award Tally</a></li>
-  </ul>
-
-<div class="links-grid" style="margin-top: 1rem;">
-<a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/MYSQL/IPLsql.sql" class="link-card" target="_blank">
-<i class="fa-solid fa-code"></i> View SQL Script
-</a>
-</div>
-
----
-
-### <i class="fab fa-python"></i> Python + Jupyter Notebook Phase
-
-- Loaded the 3 pre-filtered datasets exported from MySQL Workbench into pandas.
-- Validated datatypes, fixed inconsistencies (e.g., nulls in "runs_target", unknown fields).
-- Season-separated stats and grouped analysis (2024 vs 2025).
-- Built tables and visualisations for:
-  - Team win% (excluding cancelled matches).
-  - Catches per team (bar charts).
-  - Dot Balls bowled by Each Team (bar charts).
-  - Total Boundaries differentiated by number of 4s & 6s. (side-by-side bar charts).
-  - Toss-Winner Impact on Match Result (Pie-Charts).
-- Comments and markdowns added to enhance storytelling.
-
-<div class="links-grid" style="margin-top: 1rem;">
-  <a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/Python/IPL_Analysis.ipynb" class="link-card" target="_blank">
-    <i class="fa-brands fa-python"></i> View Notebook
-  </a>
-</div>
-
----
-
-### <i class="fas fa-chart-bar"></i> Power BI Dashboard
-
-Built a 4-page dashboard with interactivity and visual elements:
-
-#### 📄 Page 1: IPL Overview
-
-- Total boundaries, matches, runs, deliveries (KPI cards).
-- Team-wise venue map.
-- Toss Winner v/s Match Winner Donut Chart.
-- Slicers for seasons and teams.
-
-![Overview](/docs/assets/IPLP1.png)
-
-#### 📄 Page 2: Boundary & Dot Ball Insights
-
-- Total Runs scored by Teams.
-- Total 4s and 6s by team.
-- Dot balls bowled per team (per season)
-- Total Catches taken by each team.
-- Slicers for seasons.
-
-![Team Performance](/docs/assets/IPLP2.png)
-
-#### 📄 Page 3: Batting Performance
-
-- Trendline: Batting position vs runs scored.
-- Donut: Top 10 boundary hitters
-- Bar Charts: Top run scorers, wicket takers, i.e. Orange and Purple Cap Leaderboard.
-
-![Player Performance](/docs/assets/IPLP3.png)
-
-#### 📄 Page 4: Match Behaviour
-
-- Review system summary
-- Target range distribution while chasing
-
-![Match Flow](/docs/assets/IPLP4.png)
-
-✔️ Page navigation via buttons (no bookmarks/DAX required)
-
-<div class="links-grid" style="margin-top: 1rem;">
-  <a href="https://github.com/Chiragsuri/IPL_Analysis/blob/main/PowerBi_Dashboard/IPL_Analysis_Dashboard.pbix" class="link-card" target="_blank">
-    <i class="fa-solid fa-chart-column"></i> Power BI Dashboard
-  </a>
-</div>
-
-<!-- 🖼️ Published version: [*Add Power BI service link here*] -->
-
-## 📊 Key Insights
-
-- 🏏 **Punjab Kings** led in total catches in 2025.
-- 🎯 Most teams had to chase targets of more than 200 runs.
-- 🥇 **V. Kohli**, **B. Sai Sudharsan** had dominant batting performances.
-- ⚖️ Toss winner didn't always secure match wins — strategy mattered more.
-- 🔄 Several matches had successful DRS overturns — DRS efficiency varies by team.
-- 🎯 Dot ball count helped teams control run flow, especially in 2024.
-
-## 💡 Things I Learned
-
-This project taught me a lot — not just about cricket data, but about organising a full-stack data project from scratch:
-
-- How to set up and clean real-world data in SQL.
-- Structuring exploratory analysis in Python before designing visuals.
-- Creating clean, slicer-friendly dashboards in Power BI.
-- Avoiding visual clutter and focusing on **what insights actually matter**.
-- Balancing aesthetics with interactivity (tooltips, maps, dynamic filtering).
-- Using AI tools for efficiency and handling complex tasks easily.
-
-## 📦 How to Explore
-
-If you're checking this project out:
-
-1. You can review the `.sql` file to recreate the database
-2. Use the Jupyter Notebook to experiment or modify visualisations
-3. View the Power BI `.pbix` file directly, or try the online published version
-
-## 🙏 THANK YOU
-
-<div class="back-btn-bottom">
-  <a href="/projects/"><i class="fa-solid fa-arrow-left"></i> Back to Projects</a>
-</div>
+  lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+});
+</script>

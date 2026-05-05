@@ -8,12 +8,15 @@ header: false
 share: false
 ---
 
+<a href="/projects/" class="side-nav-btn prev-btn-floating" title="Project Archive"><i class="fa-solid fa-chevron-left"></i></a>
+<a href="/projects/ipl-analysis/" class="side-nav-btn next-btn-floating" title="Next Project"><i class="fa-solid fa-chevron-right"></i></a>
+
 <div class="case-study-container reveal active">
 
 <span class="cs-eyebrow">Engineering · BI</span>
 
   <h1 class="cs-title">Retail Revenue &<br>Anomaly Detection</h1>
-  <p class="cs-subtitle">An end-to-end analytics pipeline that transforms raw transaction logs into strategic insights. I engineered a custom anomaly detection model that reduced false alerts by 85%, and delivered a comprehensive executive dashboard that empowers leadership with immediate, self-serve reporting.</p>
+  <p class="cs-subtitle">An analytics pipeline that turns raw transaction logs into plain answers. I built an anomaly detection model that cut false alerts by 85% and gave leadership a dashboard they can actually use themselves.</p>
 
   <div class="cs-metrics-strip">
     <div class="cs-metric">
@@ -36,7 +39,7 @@ share: false
 
   <div class="cs-brief-grid">
     <div class="cs-brief-context">
-      <p>Retail operations generate noise faster than humans can filter it. The business was processing millions of transactions without a reliable way to separate critical performance drops from standard seasonal variance. I needed an automated intelligence layer that didn't just visualize data, but actively told leadership exactly where to focus their attention.</p>
+      <p>Retail generates noise faster than humans can filter it. The business was processing millions of transactions but couldn't separate a real performance drop from a normal seasonal dip. They needed an automated layer that didn't just draw charts, but told them exactly where to look.</p>
     </div>
     <div class="cs-brief-meta">
       <h4>Tech Stack</h4>
@@ -56,17 +59,17 @@ share: false
     <div class="cs-approach-card">
       <i class="fa-solid fa-server cs-approach-icon"></i>
       <h3>1. Data Generation & Architecture</h3>
-      <p>Simulated a realistic retail dataset (50,000 customers, 500 products). Cleaned the intentionally messy data via Python, then engineered a robust MySQL Star Schema with 11 distinct analytical views to eliminate BI bottlenecks.</p>
+      <p>Simulated a retail dataset with 50,000 customers and 500 products. I cleaned the intentionally messy data in Python, then built a MySQL Star Schema with 11 views so the BI tools wouldn't bottleneck.</p>
     </div>
     <div class="cs-approach-card">
       <i class="fa-solid fa-microchip cs-approach-icon"></i>
       <h3>2. Adaptive Anomaly Detection</h3>
-      <p>Replaced rigid monitoring with a dynamic, percentile-based statistical model built entirely in SQL. This engine adapted automatically to Nov-Jan volume spikes, dropping false failure alerts from over 10,000 down to 1,524.</p>
+      <p>I replaced their rigid alerts with a dynamic, percentile-based model built entirely in SQL. It adapted automatically to the holiday volume spikes, bringing false alarms down from over 10,000 to just 1,524.</p>
     </div>
     <div class="cs-approach-card">
       <i class="fa-solid fa-chart-line cs-approach-icon"></i>
       <h3>3. Executive BI</h3>
-      <p>Developed four interactive Power BI reporting pages powered by custom DAX time-intelligence functions. The views successfully mapped complex RFM customer segmentation into an intuitive visual format for regional managers.</p>
+      <p>Built four Power BI pages using custom DAX time-intelligence functions. It mapped out complex RFM customer segmentation into something regional managers could understand at a glance.</p>
     </div>
   </div>
 
@@ -95,12 +98,12 @@ share: false
 
   <div class="cs-finding">
     <h3 class="cs-finding-stat">20% of customers drive 32% of total revenue.</h3>
-    <p class="cs-finding-context">RFM segmentation revealed that a fraction of the customer base was disproportionately responsible for high-margin sales, allowing marketing to pivot retention strategies effectively.</p>
+    <p class="cs-finding-context">RFM segmentation showed that a tiny fraction of the customer base drove almost all the high-margin sales. This let the marketing team completely change how they handled retention.</p>
   </div>
 
   <div class="cs-finding" style="margin-top: 2rem;">
     <h3 class="cs-finding-stat">Next Steps: AI & Automation.</h3>
-    <p class="cs-finding-context">The pipeline currently relies on SQL-based statistical anomalies. The next iteration of this project will integrate Scikit-learn for ML-based predictive anomaly detection, alongside an automated alerting system that triggers emails directly to regional directors when a KPI drops.</p>
+    <p class="cs-finding-context">Right now, the pipeline relies on SQL statistical anomalies. Next, I'm integrating Scikit-learn to do predictive anomaly detection, plus an alerting system that emails regional directors the second a KPI drops.</p>
   </div>
 
   <div style="display: flex; justify-content: center; margin: 4rem 0;">

@@ -9,7 +9,7 @@ classes: wide
     <div class="hero-left reveal">
       <div class="hero-eyebrow">Data &middot; Analytics &middot; Consulting</div>
       <h1 class="hero-title">Hi, I'm Chirag<br><span class="highlight">Data Strategist</span></h1>
-      <p class="hero-bio">I build the pipeline, find what matters inside it, and hand leadership something they can act on. The goal has always been consulting - which is just the same work with a seat at the table.</p>
+      <p class="hero-bio">I build data pipelines, find what actually matters, and give leadership clear answers. Consulting is just doing this with a seat at the table.</p>
       <div class="hero-action">
         <a href="/projects/" class="btn btn-primary">Latest Works</a>
         <a href="https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_ID" target="_blank" class="btn btn-outline">Download CV</a>
@@ -107,7 +107,7 @@ classes: wide
     <div class="project-info">
       <div class="project-meta">Engineering &middot; BI</div>
       <h3 class="project-name">Retail Revenue & Anomaly Detection</h3>
-      <p class="project-desc">Engineered scalable pipelines for 800K+ records, reducing false alerts by 85% and identifying top revenue drivers.</p>
+      <p class="project-desc">Processed 800K+ records and cut false alerts by 85%. The dashboard shows exactly where revenue is coming from.</p>
       <a href="/projects/sales-health-monitor/" class="project-link">Read Case Study &rarr;</a>
     </div>
   </div>
@@ -124,7 +124,7 @@ classes: wide
     <div class="project-info">
       <div class="project-meta">Analytics &middot; SQL</div>
       <h3 class="project-name">Performance Forecasting Model</h3>
-      <p class="project-desc">Designed tracking for 10+ KPIs across 145 datasets. Built so leadership stops asking for one-off reports.</p>
+      <p class="project-desc">Tracked over 10 KPIs across 145 datasets to figure out what actually wins matches.</p>
       <a href="/projects/ipl-analysis/" class="project-link">Read Case Study &rarr;</a>
     </div>
   </div>
@@ -138,7 +138,7 @@ classes: wide
     <div class="project-info">
       <div class="project-meta">Machine Learning &middot; Python</div>
       <h3 class="project-name">Football Striker Segmentation</h3>
-      <p class="project-desc">Applied K-Means clustering and logistic regression to classify 500 players into distinct performance tiers.</p>
+      <p class="project-desc">Clustered 500 elite players using K-Means to find out what really drives goal-scoring.</p>
       <a href="/projects/football-striker/" class="project-link">Read Case Study &rarr;</a>
     </div>
   </div>
@@ -150,8 +150,8 @@ classes: wide
 </div>
 
 <div class="pre-footer-cta reveal">
-  <h2>Let's Talk Strategy.</h2>
-  <p>Available for full-time roles in data analytics and consulting.</p>
+  <h2>Let's talk.</h2>
+  <p>I'm looking for full-time roles in analytics and consulting.</p>
   <a href="mailto:chiragsuri.in@gmail.com" class="btn btn-primary">Get in Touch &rarr;</a>
 </div>
 

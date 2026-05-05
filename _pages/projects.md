@@ -12,7 +12,7 @@ header: false
   <div class="projects-header reveal active">
     <span class="header-eyebrow">The Archive</span>
     <h1>Case Studies</h1>
-    <p>I build pipelines that scale and dashboards that actually get used. Here are five times I turned messy, disconnected data into strategic leverage for decision-makers.</p>
+    <p>I build pipelines that scale and dashboards people actually use. Here are five times I turned messy data into clear answers.</p>
   </div>
 
   <div class="filter-bar reveal active">
@@ -35,7 +35,7 @@ header: false
     <div class="project-info">
       <div class="project-meta">Engineering · BI</div>
       <h2 class="project-name">Retail Revenue & Anomaly Detection</h2>
-      <p class="project-desc">Processed 800,000+ records via a custom star schema. Deployed an anomaly detection layer that cut false alerts by 85%, delivering a clean Power BI dashboard for exact revenue tracking.</p>
+      <p class="project-desc">Processed over 800,000 records through a custom star schema. I built an anomaly detection layer that cut false alerts by 85%, feeding a Power BI dashboard that tracks revenue exactly.</p>
       <div class="project-tech">
         <span class="has-tooltip" data-tooltip="Star schema with 8 tables & 11 views">MySQL</span> <span class="dot">•</span>
         <span class="has-tooltip" data-tooltip="Multi-page dashboards">Power BI</span> <span class="dot">•</span>
@@ -62,7 +62,7 @@ header: false
     <div class="project-info">
       <div class="project-meta">Analytics · SQL</div>
       <h2 class="project-name">Performance Forecasting Model</h2>
-      <p class="project-desc">Analyzed 145 distinct datasets to forecast player and team KPIs. This interactive tool tracks batting trends and boundary patterns, enabling coaching staff to build data-backed match strategies.</p>
+      <p class="project-desc">Analyzed 145 datasets to see what actually drives team performance. The dashboard tracks batting trends and boundary patterns so coaches can build strategies based on data, not just gut feeling.</p>
       <div class="project-tech">
         <span class="has-tooltip" data-tooltip="Complex query filtering">SQL</span> <span class="dot">•</span>
         <span class="has-tooltip" data-tooltip="Pandas, Matplotlib">Python</span> <span class="dot">•</span>
@@ -85,7 +85,7 @@ header: false
     <div class="project-info">
       <div class="project-meta">Machine Learning · Python</div>
       <h2 class="project-name">Football Striker Segmentation</h2>
-      <p class="project-desc">Applied K-Means clustering across 500 elite players to isolate goal-scoring drivers. Engineered custom contribution scores to build a classification model predicting future on-pitch performance.</p>
+      <p class="project-desc">Used K-Means clustering on 500 elite players to find out what really leads to goals. I built custom contribution scores and a classification model to predict how a player will perform on the pitch.</p>
       <div class="project-tech">
         <span class="has-tooltip" data-tooltip="Statistical clustering">Scikit-learn</span> <span class="dot">•</span>
         <span class="has-tooltip" data-tooltip="Data processing">Python</span> <span class="dot">•</span>
@@ -110,7 +110,7 @@ header: false
     <div class="project-info">
       <div class="project-meta">Analytics · BI</div>
       <h2 class="project-name">Year-Over-Year Sales Analytics</h2>
-      <p class="project-desc">End-to-end dashboard comparing 2023 vs. 2024 performance. Generated synthetic datasets using Python to visualize YoY growth, customer behavior, and city-level trends in Power BI.</p>
+      <p class="project-desc">A dashboard comparing 2023 against 2024. I generated synthetic data with Python to map out year-over-year growth, customer habits, and city-level trends in Power BI.</p>
       <div class="project-tech">
         <span class="has-tooltip" data-tooltip="Data manipulation">Pandas</span> <span class="dot">•</span>
         <span class="has-tooltip" data-tooltip="Synthetic data generation">Faker</span> <span class="dot">•</span>
@@ -125,7 +125,7 @@ header: false
 
   <!-- 5. Geospatial Real Estate Valuation -->
   <div class="project-showcase reveal" data-category="analytics">
-    <a href="https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales" target="_blank" class="project-visual">
+    <a href="/projects/house-sales-analysis/" class="project-visual">
       <div class="card-slider">
         <img src="/docs/assets/HouseSales.png" alt="Geospatial Real Estate Valuation">
       </div>
@@ -133,18 +133,18 @@ header: false
     <div class="project-info">
       <div class="project-meta">Analytics · Tableau</div>
       <h2 class="project-name">Geospatial Real Estate Valuation</h2>
-      <p class="project-desc">Normalized King County housing records into a dynamic geographic mapping tool. Filters property valuations by condition and build year to illustrate how local geography dictates market ceilings.</p>
+      <p class="project-desc">Turned messy King County housing records into an interactive map. It filters valuations by condition and build year to show exactly how much location changes the price.</p>
       <div class="project-tech">
         <span class="has-tooltip" data-tooltip="Data cleansing">Excel</span> <span class="dot">•</span>
         <span class="has-tooltip" data-tooltip="Geospatial visualization">Tableau</span>
       </div>
       <div class="project-actions">
-        <a href="https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales" target="_blank" class="project-link">View Dashboard ↗</a>
+        <a href="/projects/house-sales-analysis/" class="project-link">Read Case Study →</a>
+        <a href="https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales" target="_blank" class="project-link-secondary">Live Dashboard ↗</a>
       </div>
     </div>
   </div>
 
-  <!-- Added markdown="0" to stop Jekyll from ruining the buttons -->
   <div class="projects-page-nav" markdown="0">
     <a href="/" class="nav-btn prev-btn"><span class="nav-arrow">&larr;</span> Back to Home</a>
     <a href="/certifications/" class="nav-btn next-btn">Certifications <span class="nav-arrow">&rarr;</span></a>
@@ -152,11 +152,9 @@ header: false
 
 </div>
 
-<!-- Filter & Dynamic Layout Javascript -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    
-    // 1. FILTERING LOGIC
+    // FILTERING LOGIC
     const tabs = document.querySelectorAll(".filter-tab");
     const projects = document.querySelectorAll(".project-showcase");
 
@@ -189,7 +187,7 @@ header: false
       });
     });
     
-    // 2. SCROLL ANIMATION
+    // SCROLL ANIMATION
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -199,7 +197,7 @@ header: false
     }, { threshold: 0.1 });
     projects.forEach(project => observer.observe(project));
 
-    // 3. INFINITE FORWARD SLIDESHOW FADER
+    // INFINITE FORWARD SLIDESHOW FADER
     document.querySelectorAll('.card-slider').forEach(slider => {
       const images = slider.querySelectorAll('img');
       if (images.length <= 1) return; 
@@ -213,6 +211,5 @@ header: false
         images[currentIndex].style.opacity = '1'; 
       }, 3500); 
     });
-
   });
 </script>
