@@ -26,12 +26,10 @@ header: false
   <div class="project-showcase reveal" data-category="engineering">
     <a href="/projects/sales-health-monitor/" class="project-visual">
       <div class="card-slider">
-        <div class="slider-track track-4">
-          <img src="/docs/assets/SHM_Dashboard1.png" alt="Executive Overview">
-          <img src="/docs/assets/SHM_Dashboard2.png" alt="Anomaly & Risk Monitor">
-          <img src="/docs/assets/SHM_Dashboard3.png" alt="Customer Intelligence">
-          <img src="/docs/assets/SHM_Dashboard4.png" alt="Geographic Performance">
-        </div>
+        <img src="/docs/assets/SHM_Dashboard1.png" alt="Executive Overview">
+        <img src="/docs/assets/SHM_Dashboard2.png" alt="Anomaly & Risk Monitor">
+        <img src="/docs/assets/SHM_Dashboard3.png" alt="Customer Intelligence">
+        <img src="/docs/assets/SHM_Dashboard4.png" alt="Geographic Performance">
       </div>
     </a>
     <div class="project-info">
@@ -55,12 +53,10 @@ header: false
   <div class="project-showcase reveal" data-category="analytics">
     <a href="/projects/ipl-analysis/" class="project-visual">
       <div class="card-slider">
-        <div class="slider-track track-4 alt-timing">
-          <img src="/docs/assets/IPLP1.png" alt="IPL Overview">
-          <img src="/docs/assets/IPLP2.png" alt="Team Performance">
-          <img src="/docs/assets/IPLP3.png" alt="Players Performance">
-          <img src="/docs/assets/IPLP4.png" alt="Match Flow">
-        </div>
+        <img src="/docs/assets/IPLP1.png" alt="IPL Overview">
+        <img src="/docs/assets/IPLP2.png" alt="Team Performance">
+        <img src="/docs/assets/IPLP3.png" alt="Players Performance">
+        <img src="/docs/assets/IPLP4.png" alt="Match Flow">
       </div>
     </a>
     <div class="project-info">
@@ -83,9 +79,7 @@ header: false
   <div class="project-showcase reveal" data-category="ml">
     <a href="/projects/football-striker/" class="project-visual">
       <div class="card-slider">
-        <div class="slider-track track-1">
-          <img src="/docs/assets/FootballStriker.png" alt="Football Striker Segmentation">
-        </div>
+        <img src="/docs/assets/FootballStriker.png" alt="Football Striker Segmentation">
       </div>
     </a>
     <div class="project-info">
@@ -108,11 +102,9 @@ header: false
   <div class="project-showcase reveal" data-category="analytics">
     <a href="/projects/sales-data-analysis/" class="project-visual">
       <div class="card-slider">
-        <div class="slider-track track-3">
-          <img src="/docs/assets/SalesDataKPI.png" alt="Sales Data KPI Dashboard">
-          <img src="/docs/assets/SalesDataComparison.png" alt="Sales Data YoY Comparison">
-          <img src="/docs/assets/SalesDataToolTip.png" alt="Sales Data Tooltip View">
-        </div>
+        <img src="/docs/assets/SalesDataKPI.png" alt="Sales Data KPI Dashboard">
+        <img src="/docs/assets/SalesDataComparison.png" alt="Sales Data YoY Comparison">
+        <img src="/docs/assets/SalesDataToolTip.png" alt="Sales Data Tooltip View">
       </div>
     </a>
     <div class="project-info">
@@ -135,9 +127,7 @@ header: false
   <div class="project-showcase reveal" data-category="analytics">
     <a href="https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales" target="_blank" class="project-visual">
       <div class="card-slider">
-        <div class="slider-track track-1">
-          <img src="/docs/assets/HouseSales.png" alt="Geospatial Real Estate Valuation">
-        </div>
+        <img src="/docs/assets/HouseSales.png" alt="Geospatial Real Estate Valuation">
       </div>
     </a>
     <div class="project-info">
@@ -154,15 +144,10 @@ header: false
     </div>
   </div>
 
-  <div class="projects-page-nav">
-    <a href="/" class="nav-btn prev-btn">
-      <span class="nav-arrow">&larr;</span>
-      <span>Back to Home</span>
-    </a>
-    <a href="/certifications/" class="nav-btn next-btn">
-      <span>Certifications</span>
-      <span class="nav-arrow">&rarr;</span>
-    </a>
+  <!-- Added markdown="0" to stop Jekyll from ruining the buttons -->
+  <div class="projects-page-nav" markdown="0">
+    <a href="/" class="nav-btn prev-btn"><span class="nav-arrow">&larr;</span> Back to Home</a>
+    <a href="/certifications/" class="nav-btn next-btn">Certifications <span class="nav-arrow">&rarr;</span></a>
   </div>
 
 </div>
@@ -170,25 +155,21 @@ header: false
 <!-- Filter & Dynamic Layout Javascript -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. FILTERING LOGIC
     const tabs = document.querySelectorAll(".filter-tab");
     const projects = document.querySelectorAll(".project-showcase");
 
-    // This function runs every time you click a filter. 
-    // It guarantees that only visible projects get the alternating left/right layout.
     function applyAlternatingLayout(filterStr) {
       let visibleCount = 0;
-      
       projects.forEach(project => {
         if (filterStr === "all" || project.getAttribute("data-category") === filterStr) {
           project.style.display = "flex";
-          
-          // Dynamically apply zig-zag based on visibility index
           if (visibleCount % 2 !== 0) {
             project.classList.add("reverse");
           } else {
             project.classList.remove("reverse");
           }
-          
           visibleCount++;
           setTimeout(() => { project.classList.add("active"); }, 50);
         } else {
@@ -198,22 +179,17 @@ header: false
       });
     }
 
-    // Run once on page load to set up the initial "All" view
     applyAlternatingLayout("all");
 
     tabs.forEach(tab => {
       tab.addEventListener("click", () => {
-        // Handle tab active state
         tabs.forEach(t => t.classList.remove("active"));
         tab.classList.add("active");
-        
-        // Grab the data attribute and run the layout function
-        const filter = tab.getAttribute("data-filter");
-        applyAlternatingLayout(filter);
+        applyAlternatingLayout(tab.getAttribute("data-filter"));
       });
     });
     
-    // Intersection Observer for scroll animations
+    // 2. SCROLL ANIMATION
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -221,7 +197,22 @@ header: false
         }
       });
     }, { threshold: 0.1 });
-
     projects.forEach(project => observer.observe(project));
+
+    // 3. INFINITE FORWARD SLIDESHOW FADER
+    document.querySelectorAll('.card-slider').forEach(slider => {
+      const images = slider.querySelectorAll('img');
+      if (images.length <= 1) return; 
+      
+      images.forEach((img, i) => { img.style.opacity = i === 0 ? '1' : '0'; });
+      let currentIndex = 0;
+      
+      setInterval(() => {
+        images[currentIndex].style.opacity = '0'; 
+        currentIndex = (currentIndex + 1) % images.length; 
+        images[currentIndex].style.opacity = '1'; 
+      }, 3500); 
+    });
+
   });
 </script>

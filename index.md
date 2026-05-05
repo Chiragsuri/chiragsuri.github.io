@@ -49,19 +49,17 @@ classes: wide
 <div class="section">
   <h2 class="section-title reveal" style="margin-bottom: 1rem;">Core Expertise</h2>
   <div class="expertise-section reveal">
+    
     <div class="expertise-row">
       <div class="expertise-title">
         <span class="exp-num">01</span>
         <h3>Data Engineering</h3>
       </div>
       <div class="expertise-skills">
-        <span>SQL & Optimization</span>
-        <span class="dot">&middot;</span>
-        <span>ETL Pipelines</span>
-        <span class="dot">&middot;</span>
-        <span>Star / Snowflake Schema</span>
-        <span class="dot">&middot;</span>
-        <span>Quality Frameworks</span>
+        <span class="expertise-pill">SQL & Optimization</span>
+        <span class="expertise-pill">ETL Pipelines</span>
+        <span class="expertise-pill">Star / Snowflake Schema</span>
+        <span class="expertise-pill">Quality Frameworks</span>
       </div>
     </div>
 
@@ -71,13 +69,10 @@ classes: wide
         <h3>Analytics & BI</h3>
       </div>
       <div class="expertise-skills">
-        <span>Python (Pandas, NumPy)</span>
-        <span class="dot">&middot;</span>
-        <span>Power BI & DAX</span>
-        <span class="dot">&middot;</span>
-        <span>Tableau</span>
-        <span class="dot">&middot;</span>
-        <span>Advanced Excel</span>
+        <span class="expertise-pill">Python (Pandas, NumPy)</span>
+        <span class="expertise-pill">Power BI & DAX</span>
+        <span class="expertise-pill">Tableau</span>
+        <span class="expertise-pill">Advanced Excel</span>
       </div>
     </div>
 
@@ -87,13 +82,10 @@ classes: wide
         <h3>Strategy & Modeling</h3>
       </div>
       <div class="expertise-skills">
-        <span>Predictive AI (Scikit-learn)</span>
-        <span class="dot">&middot;</span>
-        <span>Hypothesis Testing</span>
-        <span class="dot">&middot;</span>
-        <span>KPI Development</span>
-        <span class="dot">&middot;</span>
-        <span>Cohort Analysis</span>
+        <span class="expertise-pill">Predictive AI (Scikit-learn)</span>
+        <span class="expertise-pill">Hypothesis Testing</span>
+        <span class="expertise-pill">KPI Development</span>
+        <span class="expertise-pill">Cohort Analysis</span>
       </div>
     </div>
 
@@ -106,12 +98,10 @@ classes: wide
   <div class="project-showcase reveal">
     <a href="/projects/sales-health-monitor/" class="project-visual">
       <div class="card-slider">
-        <div class="slider-track track-4">
-          <img src="/docs/assets/SHM_Dashboard1.png" alt="Executive Overview">
-          <img src="/docs/assets/SHM_Dashboard2.png" alt="Anomaly & Risk Monitor">
-          <img src="/docs/assets/SHM_Dashboard3.png" alt="Customer Intelligence">
-          <img src="/docs/assets/SHM_Dashboard4.png" alt="Geographic Performance">
-        </div>
+        <img src="/docs/assets/SHM_Dashboard1.png" alt="Executive Overview">
+        <img src="/docs/assets/SHM_Dashboard2.png" alt="Anomaly & Risk Monitor">
+        <img src="/docs/assets/SHM_Dashboard3.png" alt="Customer Intelligence">
+        <img src="/docs/assets/SHM_Dashboard4.png" alt="Geographic Performance">
       </div>
     </a>
     <div class="project-info">
@@ -125,12 +115,10 @@ classes: wide
   <div class="project-showcase reverse reveal">
     <a href="/projects/ipl-analysis/" class="project-visual">
       <div class="card-slider">
-        <div class="slider-track track-4 alt-timing">
-          <img src="/docs/assets/IPLP1.png" alt="IPL Overview">
-          <img src="/docs/assets/IPLP2.png" alt="Team Performance">
-          <img src="/docs/assets/IPLP3.png" alt="Players Performance">
-          <img src="/docs/assets/IPLP4.png" alt="Match Flow">
-        </div>
+        <img src="/docs/assets/IPLP1.png" alt="IPL Overview">
+        <img src="/docs/assets/IPLP2.png" alt="Team Performance">
+        <img src="/docs/assets/IPLP3.png" alt="Players Performance">
+        <img src="/docs/assets/IPLP4.png" alt="Match Flow">
       </div>
     </a>
     <div class="project-info">
@@ -144,9 +132,7 @@ classes: wide
   <div class="project-showcase reveal">
     <a href="/projects/football-striker/" class="project-visual">
       <div class="card-slider">
-        <div class="slider-track track-1">
-          <img src="/docs/assets/FootballStriker.png" alt="Striker Dashboard">
-        </div>
+        <img src="/docs/assets/FootballStriker.png" alt="Striker Dashboard">
       </div>
     </a>
     <div class="project-info">
@@ -171,7 +157,7 @@ classes: wide
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  // Scroll Reveal Animations
+  // Reveal Animations
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -182,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-  // Number Counting Logic
+  // Number Counters
   const countObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -194,8 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const step = (timestamp) => {
           if (!startTimestamp) startTimestamp = timestamp;
           const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-          const easeProgress = 1 - Math.pow(1 - progress, 4);
-          const current = easeProgress * target;
+          const current = (1 - Math.pow(1 - progress, 4)) * target;
           const isFloat = target % 1 !== 0;
           el.innerText = (isFloat ? current.toFixed(2) : Math.floor(current)) + suffix;
           if (progress < 1) window.requestAnimationFrame(step);
@@ -207,5 +192,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }, { threshold: 0.5 });
   document.querySelectorAll('.m-val').forEach(el => countObserver.observe(el));
+
+  // Dynamic Image Fader
+  document.querySelectorAll('.card-slider').forEach(slider => {
+    const images = slider.querySelectorAll('img');
+    if (images.length <= 1) return;
+    
+    images.forEach((img, i) => { img.style.opacity = i === 0 ? '1' : '0'; });
+    let currentIndex = 0;
+    
+    setInterval(() => {
+      images[currentIndex].style.opacity = '0'; 
+      currentIndex = (currentIndex + 1) % images.length; 
+      images[currentIndex].style.opacity = '1'; 
+    }, 3500); 
+  });
 });
 </script>

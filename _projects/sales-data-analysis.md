@@ -1,181 +1,158 @@
 ---
-permalink: /projects/
+title: "Retail Revenue & Anomaly Detection"
+permalink: /projects/sales-health-monitor/
 layout: single
-title: ""
 author_profile: false
 classes: wide
 header: false
+share: false
 ---
 
-<div class="archive-container">
+<div class="case-study-container reveal active">
 
-  <div class="projects-header reveal active">
-    <span class="header-eyebrow">Selected Work</span>
-    <h1>Case Studies</h1>
-    <p>Five strategic projects across data engineering, analytics, and machine learning designed to give leadership actionable visibility into performance.</p>
-  </div>
+<span class="cs-eyebrow">Engineering · BI</span>
 
-  <div class="filter-bar reveal active">
-    <button class="filter-tab active" data-filter="all">All</button>
-    <button class="filter-tab" data-filter="engineering">Engineering & BI</button>
-    <button class="filter-tab" data-filter="analytics">Analytics</button>
-    <button class="filter-tab" data-filter="ml">Machine Learning</button>
-  </div>
+  <h1 class="cs-title">Retail Revenue &<br>Anomaly Detection</h1>
+  <p class="cs-subtitle">A star schema across 800K+ records, an anomaly detection layer that cut false alerts by 85%, and a four-page executive dashboard built so leadership stops asking for one-off reports.</p>
 
-  <!-- 1. Retail Revenue & Anomaly Detection -->
-  <div class="project-showcase reveal" data-category="engineering">
-    <a href="/projects/sales-health-monitor/" class="project-visual">
-      <div class="slider-track track-1">
-        <img src="/docs/assets/SHM_Dashboard1.png" alt="Retail Revenue & Anomaly Detection">
-      </div>
-    </a>
-    <div class="project-info">
-      <div class="project-meta">Engineering · BI</div>
-      <h2 class="project-name">Retail Revenue & Anomaly Detection</h2>
-      <p class="project-desc">Processing 800,000 transaction records required a custom star schema. I built this architecture across eight tables and deployed an anomaly detection layer that cut false-positive alerts by 85%. The result is a clean Power BI dashboard that lets executives track actual revenue health instead of chasing ghost data.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Star schema with 8 tables & 11 views">MySQL</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Multi-page dashboards">Power BI</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Data validation & automation">Python</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Time intelligence">DAX</span>
-      </div>
-      <div class="project-actions">
-        <a href="/projects/sales-health-monitor/" class="project-link">Read Case Study →</a>
-        <a href="https://github.com/Chiragsuri/Sales_Health_Monitor" target="_blank" class="project-link-secondary">GitHub ↗</a>
-      </div>
+  <!-- The New Professional Tech Grid -->
+  <div class="cs-exec-summary">
+    <div class="cs-exec-item">
+      <span class="cs-exec-label">Database</span>
+      <span class="cs-exec-value">MySQL (Star Schema)</span>
+    </div>
+    <div class="cs-exec-item">
+      <span class="cs-exec-label">Logic Layer</span>
+      <span class="cs-exec-value">Python (Pandas, NumPy)</span>
+    </div>
+    <div class="cs-exec-item">
+      <span class="cs-exec-label">Visualization</span>
+      <span class="cs-exec-value">Power BI</span>
+    </div>
+    <div class="cs-exec-item">
+      <span class="cs-exec-label">Key Technique</span>
+      <span class="cs-exec-value">DAX Time Intelligence</span>
     </div>
   </div>
 
-  <!-- 2. Performance Forecasting Model (IPL) -->
-  <div class="project-showcase reverse reveal" data-category="analytics">
-    <a href="/projects/ipl-analysis/" class="project-visual">
-      <div class="slider-track track-1">
-        <img src="/docs/assets/IPLP1.png" alt="Performance Forecasting Model">
-      </div>
-    </a>
-    <div class="project-info">
-      <div class="project-meta">Analytics · SQL</div>
-      <h2 class="project-name">Performance Forecasting Model</h2>
-      <p class="project-desc">Franchise sports run on razor-thin margins. I built this forecasting model to track player and team performance across 145 distinct IPL datasets. By isolating batting trends and boundary patterns into an interactive tool, coaching staff can project match momentum and build data-backed strategies.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Complex query filtering">SQL</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Pandas, Matplotlib">Python</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Interactive reporting">Power BI</span>
-      </div>
-      <div class="project-actions">
-        <a href="/projects/ipl-analysis/" class="project-link">Read Case Study →</a>
-        <a href="https://github.com/Chiragsuri/IPL_Analysis" target="_blank" class="project-link-secondary">GitHub ↗</a>
-      </div>
+  <div class="cs-metrics-strip">
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="800">0</span>K+</span>
+      <span class="cs-metric-label">Records Processed</span>
+    </div>
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="85">0</span>%</span>
+      <span class="cs-metric-label">False Alert Reduction</span>
+    </div>
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="100">0</span>%</span>
+      <span class="cs-metric-label">Automated Pipeline</span>
+    </div>
+    <div class="cs-metric">
+      <span class="cs-metric-val"><span class="counter" data-target="4">0</span></span>
+      <span class="cs-metric-label">Dashboard Pages</span>
     </div>
   </div>
 
-  <!-- 3. Football Striker Segmentation -->
-  <div class="project-showcase reveal" data-category="ml">
-    <a href="/projects/football-striker/" class="project-visual">
-      <div class="slider-track track-1">
-        <img src="/docs/assets/FootballStriker.png" alt="Football Striker Segmentation">
-      </div>
-    </a>
-    <div class="project-info">
-      <div class="project-meta">Machine Learning · Python</div>
-      <h2 class="project-name">Football Striker Segmentation</h2>
-      <p class="project-desc">Finding undervalued talent requires looking past basic stats. I applied K-Means clustering across 500 elite players to isolate the true drivers of goal-scoring. By engineering custom contribution scores from raw match logs, I developed a classification model that correlates strongly with future on-pitch performance.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Statistical clustering">Scikit-learn</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Data processing">Python</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Visual plotting">Seaborn</span>
-      </div>
-      <div class="project-actions">
-        <a href="/projects/football-striker/" class="project-link">Read Case Study →</a>
-        <a href="https://github.com/Chiragsuri/Football-Striker-Performance" target="_blank" class="project-link-secondary">GitHub ↗</a>
-      </div>
+  <div class="cs-approach-row" style="margin-top: 2rem; border-top: none;">
+    <div class="cs-approach-phase">The Context</div>
+    <p class="cs-approach-desc">Retail operations at this scale generate noise faster than humans can filter it. The business was processing millions of transactions with no reliable way to distinguish critical performance drops from standard seasonal variance. I was tasked with engineering an automated intelligence layer that didn't just visualize data, but actively identified where leadership needed to focus their attention.</p>
+  </div>
+
+  <div class="cs-approach-row">
+    <div class="cs-approach-phase">Phase 01<br>Data Architecture</div>
+    <p class="cs-approach-desc">Engineered a scalable MySQL Star Schema comprising one central fact table and three dimension tables. Layered 11 distinct analytical views on top to handle pre-aggregations, removing query bottlenecks for BI ingestion.</p>
+  </div>
+  
+  <div class="cs-approach-row">
+    <div class="cs-approach-phase">Phase 02<br>Anomaly Detection</div>
+    <p class="cs-approach-desc">Replaced rigid static thresholds with a dynamic, percentile-based statistical model using advanced SQL. This allowed the system to adapt automatically to massive seasonal volume spikes (like Nov-Jan rushes) without triggering false failures.</p>
+  </div>
+  
+  <div class="cs-approach-row">
+    <div class="cs-approach-phase">Phase 03<br>Executive BI</div>
+    <p class="cs-approach-desc">Developed four interactive Power BI reporting pages using dynamic DAX time-intelligence functions, mapping complex RFM customer segmentation into an intuitive visual format for regional managers.</p>
+  </div>
+
+  <div class="cs-section-label" style="margin-top: 3rem;">The Dashboards</div>
+
+  <div class="cs-image-grid">
+    <div class="cs-showcase-item">
+      <img src="/docs/assets/SHM_Dashboard1.png" alt="Executive Dashboard" class="cs-showcase-img">
+      <div class="cs-showcase-caption">Dashboard 1: Revenue trends, YoY comparisons, and top-performer rankings.</div>
+    </div>
+    <div class="cs-showcase-item">
+      <img src="/docs/assets/SHM_Dashboard2.png" alt="Anomaly Monitor" class="cs-showcase-img">
+      <div class="cs-showcase-caption">Dashboard 2: The Anomaly & Risk Monitor, tracking abnormal product behavior.</div>
+    </div>
+    <div class="cs-showcase-item">
+      <img src="/docs/assets/SHM_Dashboard3.png" alt="Customer Intelligence" class="cs-showcase-img">
+      <div class="cs-showcase-caption">Dashboard 3: Customer Intelligence, RFM segmentation, and lifetime value tracking.</div>
+    </div>
+    <div class="cs-showcase-item">
+      <img src="/docs/assets/SHM_Dashboard4.png" alt="Geographic Performance" class="cs-showcase-img">
+      <div class="cs-showcase-caption">Dashboard 4: Geographic Performance, mapping regional growth and product matrices.</div>
     </div>
   </div>
 
-  <!-- 4. Year-Over-Year Sales Analytics -->
-  <div class="project-showcase reverse reveal" data-category="analytics">
-    <a href="/projects/sales-data-analysis/" class="project-visual">
-      <div class="slider-track track-1">
-        <img src="/docs/assets/SalesDataKPI.png" alt="Year-Over-Year Sales Analytics">
-      </div>
-    </a>
-    <div class="project-info">
-      <div class="project-meta">Analytics · BI</div>
-      <h2 class="project-name">Year-Over-Year Sales Analytics</h2>
-      <p class="project-desc">I built this end-to-end sales analytics dashboard to compare business performance between 2023 and 2024. Using Python libraries like pandas, NumPy, and Faker, I generated and cleaned realistic synthetic datasets, routing them into Power BI to visualize YoY growth, customer behavior, and city-level trends.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Data manipulation">Pandas</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Synthetic data generation">Faker</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Interactive slicing">Power BI</span>
-      </div>
-      <div class="project-actions">
-        <a href="/projects/sales-data-analysis/" class="project-link">Read Case Study →</a>
-        <a href="https://github.com/Chiragsuri/Sales-Data-Analysis" target="_blank" class="project-link-secondary">GitHub ↗</a>
-      </div>
-    </div>
+  <div class="cs-section-label">Key Findings</div>
+
+  <div class="cs-finding">
+    <h3 class="cs-finding-stat">20% of customers drive 32% of total revenue.</h3>
+    <p class="cs-finding-context">RFM segmentation revealed that a fraction of the customer base was disproportionately responsible for high-margin sales, allowing marketing to pivot retention strategies.</p>
   </div>
 
-  <!-- 5. Geospatial Real Estate Valuation -->
-  <div class="project-showcase reveal" data-category="analytics">
-    <a href="https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales" target="_blank" class="project-visual">
-      <div class="slider-track track-1">
-        <img src="/docs/assets/HouseSales.png" alt="Geospatial Real Estate Valuation">
-      </div>
+  <div class="cs-finding">
+    <h3 class="cs-finding-stat">Holiday peaks average 150% above the baseline.</h3>
+    <p class="cs-finding-context">Temporal analysis identified a massive spike spanning Nov-Jan, validating the need for the dynamic anomaly thresholds implemented in Phase 2.</p>
+  </div>
+
+  <div class="cs-links">
+    <a href="https://github.com/Chiragsuri/Sales_Health_Monitor" target="_blank" class="btn btn-primary">
+      <i class="fa-brands fa-github"></i> View Repository
     </a>
-    <div class="project-info">
-      <div class="project-meta">Analytics · Tableau</div>
-      <h2 class="project-name">Geospatial Real Estate Valuation</h2>
-      <p class="project-desc">Raw property records are notoriously disorganized. I stripped and normalized the King County housing database to build a dynamic geographic mapping tool. The dashboard filters property valuations by physical condition and build year, illustrating exactly how hyper-local geography dictates market price ceilings.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Data cleansing">Excel</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Geospatial visualization">Tableau</span>
-      </div>
-      <div class="project-actions">
-        <a href="https://public.tableau.com/app/profile/chirag.suri/viz/KingCountyHouseSales_16953115471270/KingCountyHouseSales" target="_blank" class="project-link">View Dashboard ↗</a>
-      </div>
-    </div>
   </div>
 
   <div class="projects-page-nav">
-    <a href="/">← Back to Home</a>
-    <a href="/certifications/">Certifications →</a>
+    <a href="/projects/">← Archive</a>
   </div>
 
 </div>
 
-<!-- Filter Javascript -->
+<!-- Number Counters & Image Lightbox -->
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const tabs = document.querySelectorAll(".filter-tab");
-    const projects = document.querySelectorAll(".project-showcase");
-
-    tabs.forEach(tab => {
-      tab.addEventListener("click", () => {
-        tabs.forEach(t => t.classList.remove("active"));
-        tab.classList.add("active");
-        
-        const filter = tab.getAttribute("data-filter");
-        
-        projects.forEach(project => {
-          if (filter === "all" || project.getAttribute("data-category") === filter) {
-            project.style.display = "flex";
-            setTimeout(() => { project.classList.add("active"); }, 50);
-          } else {
-            project.style.display = "none";
-            project.classList.remove("active");
-          }
-        });
-      });
-    });
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    projects.forEach(project => observer.observe(project));
+window.addEventListener('load', () => {
+  const counters = document.querySelectorAll(".counter");
+  counters.forEach(counter => {
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+      const inc = target / 150;
+      if (count < target) {
+        counter.innerText = Math.ceil(count + inc);
+        setTimeout(updateCount, 15);
+      } else {
+        counter.innerText = target;
+      }
+    };
+    updateCount();
   });
+
+  const lightbox = document.createElement('div');
+  lightbox.id = 'cs-lightbox';
+  lightbox.className = 'cs-lightbox';
+  document.body.appendChild(lightbox);
+
+  document.querySelectorAll('.cs-showcase-img').forEach(image => {
+    image.addEventListener('click', () => {
+      lightbox.classList.add('active');
+      while (lightbox.firstChild) lightbox.removeChild(lightbox.firstChild);
+      const img = document.createElement('img');
+      img.src = image.src;
+      lightbox.appendChild(img);
+    });
+  });
+
+  lightbox.addEventListener('click', () => lightbox.classList.remove('active'));
+});
 </script>

@@ -87,6 +87,12 @@ footer:
       icon: "fab fa-fw fa-google"
       url: "ue205030.chirag.ece@gmail.com"
 
+# Collections Definition
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+
 # Collections
 defaults:
   # _posts
