@@ -1,6 +1,3 @@
-/* ==================================
-   custom.css - Executive Consultant Edition
-   ================================== */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap");
 
 :root {
@@ -319,7 +316,6 @@ nav.greedy-nav .visible-links a:hover {
   object-position: right top;
   opacity: 0.85;
 }
-
 .scroll-indicator {
   position: absolute;
   bottom: 2.5rem;
@@ -443,7 +439,6 @@ nav.greedy-nav .visible-links a:hover {
   letter-spacing: -0.02em;
 }
 
-/* The new Homepage Skill Pills */
 .expertise-skills {
   flex: 1;
   display: flex;
@@ -818,7 +813,6 @@ footer,
   transform: translateY(1px);
 }
 
-/* Archive Tech Icons Tooltips */
 .project-tech {
   font-size: 0.85rem;
   color: var(--text-muted);
@@ -887,7 +881,7 @@ footer,
   bottom: 125%;
 }
 
-/* ── 10. REFINED NAV BUTTONS (JEKYLL OVERRIDE) ── */
+/* ── 10. REFINED NAV BUTTONS ── */
 .projects-page-nav {
   display: flex;
   justify-content: space-between;
@@ -945,7 +939,7 @@ footer,
   transform: translate(5px, -1px);
 }
 
-/* ── 11. INTERNAL CASE STUDY TEMPLATE (SCANNABLE LAYOUT) ── */
+/* ── 11. INTERNAL CASE STUDY TEMPLATE ── */
 .case-study-container {
   max-width: 1400px;
   margin: 0 auto !important;
@@ -981,7 +975,6 @@ footer,
   margin-bottom: 3rem;
 }
 
-/* Golden Headers */
 .cs-section-label {
   color: var(--accent) !important;
   font-size: 0.75rem !important;
@@ -1133,12 +1126,10 @@ footer,
   border-radius: 12px;
   border: 1px solid var(--border);
   margin-bottom: 1.5rem;
-  filter: grayscale(30%) brightness(0.8);
   transition: all 0.4s ease;
   cursor: zoom-in;
 }
 .cs-showcase-img:hover {
-  filter: grayscale(0%) brightness(1);
   transform: scale(1.02);
   border-color: var(--accent);
 }
@@ -1428,15 +1419,12 @@ footer,
 .side-nav-btn {
   position: fixed !important;
   top: 50%;
-  margin-top: -26px; /* Perfect vertical centering */
+  margin-top: -26px;
   width: 52px;
   height: 52px;
-
-  /* NEW BASE COLORS: Subtle gold tint & brighter icon */
   background: rgba(200, 169, 110, 0.05);
   border: 1px solid rgba(200, 169, 110, 0.25);
   color: rgba(244, 244, 240, 0.85);
-
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1450,7 +1438,7 @@ footer,
 }
 
 .side-nav-btn:hover {
-  background: rgba(200, 169, 110, 0.25); /* Richer gold fill on hover */
+  background: rgba(200, 169, 110, 0.25);
   color: var(--accent);
   border-color: var(--accent);
   transform: scale(1.1);
@@ -1463,15 +1451,13 @@ footer,
   right: 3vw !important;
 }
 
-/* Medium Screens (Laptops & Tablets: 768px - 1400px) */
 @media (max-width: 1400px) {
   .side-nav-btn {
-    width: 44px; /* Shrink slightly */
+    width: 44px;
     height: 44px;
     margin-top: -22px;
     font-size: 1rem;
   }
-  /* Push to the absolute edge so they don't cover text */
   .prev-btn-floating {
     left: 15px !important;
   }
@@ -1480,9 +1466,205 @@ footer,
   }
 }
 
-/* Mobile Screens (< 768px) */
 @media (max-width: 768px) {
   .side-nav-btn {
-    display: none !important; /* Hide on phones to prevent blocking text */
+    display: none !important;
   }
+}
+
+/* ── 14. CERTIFICATIONS PAGE ── */
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.cert-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.cert-image-wrapper {
+  flex: 0 0 55%;
+  position: relative;
+}
+
+.cert-card .cs-showcase-img {
+  margin-bottom: 0;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.cert-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0 0 1rem;
+  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cert-title i {
+  color: var(--accent);
+  font-size: 1.4rem;
+}
+
+.cert-desc {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin: 0 0 2rem;
+}
+
+.cert-meta-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+@media (max-width: 900px) {
+  .cert-list {
+    gap: 5rem;
+  }
+  .cert-card,
+  .cert-card:nth-child(even) {
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: flex-start;
+  }
+  .cert-image-wrapper {
+    flex: none;
+    width: 100%;
+  }
+  .cert-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* ── 15. ABOUT PAGE & CONTACT FORM ── */
+
+.about-profile-img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+  filter: grayscale(15%) brightness(0.9);
+  transition: all 0.4s ease;
+  display: block;
+  cursor: default;
+}
+
+.about-profile-img:hover {
+  filter: grayscale(0%) brightness(1);
+  transform: translateY(-4px);
+  border-color: rgba(200, 169, 110, 0.4);
+  box-shadow: 0 20px 40px rgba(200, 169, 110, 0.15);
+}
+
+/* The Rounded Glass Panel Fix */
+.form-glass-card {
+  background: rgba(15, 15, 15, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px; /* Perfectly smooth rounded edges */
+  padding: 3.5rem;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.about-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+.about-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.about-form-group label {
+  color: var(--accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+.about-form input,
+.about-form textarea {
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  border-radius: 0 !important;
+  color: var(--text);
+  padding: 8px 0 12px 0;
+  font-size: 1.1rem;
+  font-family: "Inter", sans-serif;
+  transition: all 0.3s ease;
+}
+
+.about-form input:focus,
+.about-form textarea:focus {
+  outline: none;
+  border-bottom-color: var(--accent) !important;
+  box-shadow: 0 1px 0 var(--accent) !important;
+}
+
+.about-form input::placeholder,
+.about-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.15);
+  font-weight: 300;
+}
+
+.about-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form-toast {
+  display: none;
+  margin: 1.5rem 0 0;
+  padding: 14px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  animation: fadeInOut 4s ease forwards;
+}
+.form-toast.success {
+  background-color: rgba(46, 204, 113, 0.1);
+  color: #2ecc71;
+  border: 1px solid rgba(46, 204, 113, 0.3);
+}
+.form-toast.error {
+  background-color: rgba(231, 76, 60, 0.1);
+  color: #e74c3c;
+  border: 1px solid rgba(231, 76, 60, 0.3);
 }
