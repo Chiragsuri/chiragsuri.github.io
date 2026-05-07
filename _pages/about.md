@@ -11,7 +11,7 @@ header: false
 
   <div class="projects-header reveal active">
     <span class="header-eyebrow">The Person Behind The Data</span>
-    <h1>Hi, I'm Chirag.</h1>
+    <h1>Hi, I'm Chirag</h1>
     <p>I build data pipelines that scale and executive dashboards that drive actual decisions.</p>
   </div>
 

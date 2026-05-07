@@ -12,7 +12,7 @@ classes: wide
       <p class="hero-bio">I build data pipelines, find what actually matters, and give leadership clear answers. Consulting is just doing this with a seat at the table.</p>
       <div class="hero-action">
         <a href="/projects/" class="btn btn-primary">Latest Works</a>
-        <a href="https://drive.google.com/file/d/YOUR_GOOGLE_DRIVE_ID" target="_blank" class="btn btn-outline">Download CV</a>
+        <a href="https://drive.google.com/drive/folders/1MErRTw0B0sXEJaXT5BqQe2DyW1GLhM9H" target="_blank" class="btn btn-outline">Download CV</a>
       </div>
     </div>
     
@@ -144,7 +144,7 @@ classes: wide
   </div>
   
   <div class="archive-cta reveal">
-    <p>Three projects. More in the archive.</p>
+    <p>These are just the highlights. Dive into the complete archive to explore more end-to-end pipelines, predictive models, and dashboards.</p>
     <a href="/projects/" class="btn btn-outline archive-btn">Explore Full Archive</a>
   </div>
 </div>
@@ -157,7 +157,6 @@ classes: wide
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {
-  // Reveal Animations
   const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -168,7 +167,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.1 });
   document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-  // Number Counters
   const countObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -193,7 +191,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, { threshold: 0.5 });
   document.querySelectorAll('.m-val').forEach(el => countObserver.observe(el));
 
-  // Dynamic Image Fader
   document.querySelectorAll('.card-slider').forEach(slider => {
     const images = slider.querySelectorAll('img');
     if (images.length <= 1) return;

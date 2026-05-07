@@ -22,7 +22,6 @@ header: false
     <button class="filter-tab" data-filter="ml">Machine Learning</button>
   </div>
 
-  <!-- 1. Retail Revenue & Anomaly Detection -->
   <div class="project-showcase reveal" data-category="engineering">
     <a href="/projects/sales-health-monitor/" class="project-visual">
       <div class="card-slider">
@@ -36,11 +35,11 @@ header: false
       <div class="project-meta">Engineering · BI</div>
       <h2 class="project-name">Retail Revenue & Anomaly Detection</h2>
       <p class="project-desc">Processed over 800,000 records through a custom star schema. I built an anomaly detection layer that cut false alerts by 85%, feeding a Power BI dashboard that tracks revenue exactly.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Star schema with 8 tables & 11 views">MySQL</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Multi-page dashboards">Power BI</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Data validation & automation">Python</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Time intelligence">DAX</span>
+      <div class="cs-tech-tags" style="margin-bottom: 2rem;">
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Star schema with 8 tables & 11 views">MySQL</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Multi-page dashboards">Power BI</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Data validation & automation">Python</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Time intelligence">DAX</span>
       </div>
       <div class="project-actions">
         <a href="/projects/sales-health-monitor/" class="project-link">Read Case Study →</a>
@@ -49,7 +48,6 @@ header: false
     </div>
   </div>
 
-  <!-- 2. Performance Forecasting Model (IPL) -->
   <div class="project-showcase reveal" data-category="analytics">
     <a href="/projects/ipl-analysis/" class="project-visual">
       <div class="card-slider">
@@ -63,10 +61,10 @@ header: false
       <div class="project-meta">Analytics · SQL</div>
       <h2 class="project-name">Performance Forecasting Model</h2>
       <p class="project-desc">Analyzed 145 datasets to see what actually drives team performance. The dashboard tracks batting trends and boundary patterns so coaches can build strategies based on data, not just gut feeling.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Complex query filtering">SQL</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Pandas, Matplotlib">Python</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Interactive reporting">Power BI</span>
+      <div class="cs-tech-tags" style="margin-bottom: 2rem;">
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Complex query filtering">SQL</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Pandas, Matplotlib">Python</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Interactive reporting">Power BI</span>
       </div>
       <div class="project-actions">
         <a href="/projects/ipl-analysis/" class="project-link">Read Case Study →</a>
@@ -75,7 +73,6 @@ header: false
     </div>
   </div>
 
-  <!-- 3. Football Striker Segmentation -->
   <div class="project-showcase reveal" data-category="ml">
     <a href="/projects/football-striker/" class="project-visual">
       <div class="card-slider">
@@ -86,10 +83,10 @@ header: false
       <div class="project-meta">Machine Learning · Python</div>
       <h2 class="project-name">Football Striker Segmentation</h2>
       <p class="project-desc">Used K-Means clustering on 500 elite players to find out what really leads to goals. I built custom contribution scores and a classification model to predict how a player will perform on the pitch.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Statistical clustering">Scikit-learn</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Data processing">Python</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Visual plotting">Seaborn</span>
+      <div class="cs-tech-tags" style="margin-bottom: 2rem;">
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Statistical clustering">Scikit-learn</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Data processing">Python</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Visual plotting">Seaborn</span>
       </div>
       <div class="project-actions">
         <a href="/projects/football-striker/" class="project-link">Read Case Study →</a>
@@ -98,7 +95,6 @@ header: false
     </div>
   </div>
 
-  <!-- 4. Year-Over-Year Sales Analytics -->
   <div class="project-showcase reveal" data-category="analytics">
     <a href="/projects/sales-data-analysis/" class="project-visual">
       <div class="card-slider">
@@ -111,10 +107,10 @@ header: false
       <div class="project-meta">Analytics · BI</div>
       <h2 class="project-name">Year-Over-Year Sales Analytics</h2>
       <p class="project-desc">A dashboard comparing 2023 against 2024. I generated synthetic data with Python to map out year-over-year growth, customer habits, and city-level trends in Power BI.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Data manipulation">Pandas</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Synthetic data generation">Faker</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Interactive slicing">Power BI</span>
+      <div class="cs-tech-tags" style="margin-bottom: 2rem;">
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Data manipulation">Pandas</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Synthetic data generation">Faker</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Interactive slicing">Power BI</span>
       </div>
       <div class="project-actions">
         <a href="/projects/sales-data-analysis/" class="project-link">Read Case Study →</a>
@@ -123,7 +119,6 @@ header: false
     </div>
   </div>
 
-  <!-- 5. Geospatial Real Estate Valuation -->
   <div class="project-showcase reveal" data-category="analytics">
     <a href="/projects/house-sales-analysis/" class="project-visual">
       <div class="card-slider">
@@ -134,9 +129,9 @@ header: false
       <div class="project-meta">Analytics · Tableau</div>
       <h2 class="project-name">Geospatial Real Estate Valuation</h2>
       <p class="project-desc">Turned messy King County housing records into an interactive map. It filters valuations by condition and build year to show exactly how much location changes the price.</p>
-      <div class="project-tech">
-        <span class="has-tooltip" data-tooltip="Data cleansing">Excel</span> <span class="dot">•</span>
-        <span class="has-tooltip" data-tooltip="Geospatial visualization">Tableau</span>
+      <div class="cs-tech-tags" style="margin-bottom: 2rem;">
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Data cleansing">Excel</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Geospatial visualization">Tableau</span>
       </div>
       <div class="project-actions">
         <a href="/projects/house-sales-analysis/" class="project-link">Read Case Study →</a>

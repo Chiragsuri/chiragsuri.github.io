@@ -1,13 +1,6 @@
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector(".custom-masthead");
-    if (header) {
-      window.addEventListener("scroll", () => {
-        header.classList.toggle("scrolled", window.scrollY > 80);
-      });
-    }
-  });
-</script>
+<button id="scrollTopBtn" title="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -29,81 +22,77 @@
   });
 </script>
 
-<script>
-  window.addEventListener("load", function () {
-    const sliders = document.querySelectorAll(".auto-slider-track");
-
-    sliders.forEach((track) => {
-      const slides = track.querySelectorAll("img");
-      if (slides.length <= 1) return;
-
-      let index = 0;
-
-      // Mark first image as visible
-      slides[0].classList.add("visible");
-
-      setInterval(() => {
-        slides.forEach((img) => img.classList.remove("visible"));
-        index = (index + 1) % slides.length;
-        slides[index].classList.add("visible");
-        track.style.transform = `translateX(-${index * 100}%)`;
-      }, 3000);
-    });
-  });
-</script>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".nav-toggle");
-    const menu = document.querySelector(".visible-links");
-    if (toggle && menu) {
-      toggle.addEventListener("click", () => {
-        menu.classList.toggle("show");
-      });
-    }
-  });
-</script>
-
-<script>
-  document.querySelectorAll(".follow-btn").forEach((btn) =>
-    btn.addEventListener("click", () => {
-      btn.parentElement.classList.toggle("active");
-    }),
-  );
-</script>
-
-<!-- about -->
-<!-- EmailJS SDK -->
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function () {
-    emailjs.init("ekc09s12Vt5OB3CO-"); // Replace with your actual EmailJS Public Key
+    emailjs.init("ekc09s12Vt5OB3CO-");
   })();
 
-  const form = document.getElementById("contact-form");
-  const toast = document.getElementById("form-toast");
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const toast = document.getElementById("form-toast");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+    if (form) {
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-    emailjs.sendForm("service_mghxt4s", "template_sqrqdgr", form).then(
-      function () {
-        showToast("Message sent successfully! ✅", "success");
-        form.reset();
-      },
-      function (error) {
-        showToast("Failed to send message. Please try again.", "error");
-        console.error(error);
-      },
-    );
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalBtnText = submitBtn.innerHTML;
+
+        // Lock button and show spinner
+        submitBtn.disabled = true;
+        submitBtn.innerHTML =
+          '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+
+        // SAFETY FALLBACK: Force unlock after 8 seconds if network hangs
+        const safetyTimer = setTimeout(() => {
+          if (submitBtn.disabled) {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnText;
+            showToast("Network timeout. Please try again.", "error");
+          }
+        }, 8000);
+
+        try {
+          emailjs.sendForm("service_mghxt4s", "template_sqrqdgr", form).then(
+            function () {
+              clearTimeout(safetyTimer);
+              showToast("Message sent successfully! ✅", "success");
+              form.reset();
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalBtnText;
+            },
+            function (error) {
+              clearTimeout(safetyTimer);
+              showToast("Failed to send message. Please try again.", "error");
+              console.error("EmailJS Error:", error);
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalBtnText;
+            },
+          );
+        } catch (err) {
+          clearTimeout(safetyTimer);
+          console.error("EmailJS Sync Error:", err);
+          showToast(
+            "An error occurred. Please check your connection.",
+            "error",
+          );
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = originalBtnText;
+        }
+      });
+    }
+
+    function showToast(message, type) {
+      if (toast) {
+        toast.textContent = message;
+        toast.className = `form-toast ${type}`;
+        toast.style.display = "block";
+
+        setTimeout(() => {
+          toast.style.display = "none";
+        }, 4000);
+      }
+    }
   });
-
-  function showToast(message, type) {
-    toast.textContent = message;
-    toast.className = `form-toast ${type}`;
-    toast.style.display = "block";
-    setTimeout(() => {
-      toast.style.display = "none";
-    }, 4000);
-  }
 </script>

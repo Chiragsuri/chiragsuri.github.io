@@ -1,11 +1,13 @@
 <header class="custom-masthead" role="banner">
   <nav class="greedy-nav">
-    <a href="/" class="site-title">Chirag Suri</a>
+    <a href="/" class="site-title">
+      <span class="logo-icon"><i class="fa-solid fa-layer-group"></i></span>
+      Chirag Suri
+    </a>
     <button class="nav-toggle" aria-label="Toggle Menu">☰</button>
     <ul class="visible-links">
-      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/projects/">Case Studies</a></li>
       <li><a href="/certifications/">Certifications</a></li>
-      <li><a href="/textUtils/">TextUtils</a></li>
       <li><a href="/about/">About</a></li>
     </ul>
   </nav>
@@ -23,3 +25,55 @@
     }
   });
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const header = document.querySelector(".custom-masthead");
+
+    if (header) {
+      if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+      }
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    }
+  });
+</script>
+
+<!-- Meta tags for SEO and social sharing -->
+
+<title>Chirag Suri | Data Strategist</title>
+<meta name="title" content="Chirag Suri | Data Strategist" />
+<meta
+  name="description"
+  content="I build scalable data pipelines and actionable forecasting models to give leadership a consistent view of performance."
+/>
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://chiragsuri.github.io/" />
+<meta property="og:title" content="Chirag Suri | Data Strategist" />
+<meta
+  property="og:description"
+  content="I build scalable data pipelines and actionable forecasting models to give leadership a consistent view of performance."
+/>
+<meta
+  property="og:image"
+  content="https://chiragsuri.github.io/docs/assets/SHM_Dashboard1.png"
+/>
+
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://chiragsuri.github.io/" />
+<meta property="twitter:title" content="Chirag Suri | Data Strategist" />
+<meta
+  property="twitter:description"
+  content="I build scalable data pipelines and actionable forecasting models to give leadership a consistent view of performance."
+/>
+<meta
+  property="twitter:image"
+  content="https://chiragsuri.github.io/docs/assets/SHM_Dashboard1.png"
+/>
