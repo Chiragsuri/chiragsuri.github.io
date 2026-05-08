@@ -33,6 +33,12 @@
     const toast = document.getElementById("form-toast");
 
     if (form) {
+      // THE GUARD: Check if we already attached a listener to this form
+      if (form.dataset.listenerAttached === "true") return;
+
+      // Mark the form so we never attach another listener
+      form.dataset.listenerAttached = "true";
+
       form.addEventListener("submit", function (e) {
         e.preventDefault();
 
