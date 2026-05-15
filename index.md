@@ -96,6 +96,22 @@ classes: wide
   <h2 class="section-title reveal">Case Studies</h2>
   
   <div class="project-showcase reveal">
+    <a href="/projects/ravenstack-churn-engine/" class="project-visual">
+      <div class="card-slider">
+        <img src="/docs/assets/RavenStack_Page1.png" alt="Executive Summary">
+        <img src="/docs/assets/RavenStack_Page2.png" alt="CSM Action Board">
+        <img src="/docs/assets/RavenStack_Page3.png" alt="Action Board Filtered">
+      </div>
+    </a>
+    <div class="project-info">
+      <div class="project-meta">Machine Learning &middot; Data Engineering</div>
+      <h3 class="project-name">Customer Churn Decision Engine</h3>
+      <p class="project-desc">Engineered an end-to-end pipeline using BigQuery and XGBoost to predict B2B SaaS churn. The Power BI dashboard gives Customer Success a daily list of at-risk accounts and exactly why they might leave.</p>
+      <a href="/projects/ravenstack-churn-engine/" class="project-link">Read Case Study &rarr;</a>
+    </div>
+  </div>
+
+  <div class="project-showcase reverse reveal">
     <a href="/projects/sales-health-monitor/" class="project-visual">
       <div class="card-slider">
         <img src="/docs/assets/SHM_Dashboard1.png" alt="Executive Overview">
@@ -107,12 +123,12 @@ classes: wide
     <div class="project-info">
       <div class="project-meta">Engineering &middot; BI</div>
       <h3 class="project-name">Retail Revenue & Anomaly Detection</h3>
-      <p class="project-desc">Processed 800K+ records and cut false alerts by 85%. The dashboard shows exactly where revenue is coming from.</p>
+      <p class="project-desc">Processed 800K+ records and cut false alerts by 85%. The dashboard shows exactly where revenue is coming from and isolates high-value customer segments automatically.</p>
       <a href="/projects/sales-health-monitor/" class="project-link">Read Case Study &rarr;</a>
     </div>
   </div>
 
-  <div class="project-showcase reverse reveal">
+  <div class="project-showcase reveal">
     <a href="/projects/ipl-analysis/" class="project-visual">
       <div class="card-slider">
         <img src="/docs/assets/IPLP1.png" alt="IPL Overview">
@@ -124,22 +140,8 @@ classes: wide
     <div class="project-info">
       <div class="project-meta">Analytics &middot; SQL</div>
       <h3 class="project-name">Performance Forecasting Model</h3>
-      <p class="project-desc">Tracked over 10 KPIs across 145 datasets to figure out what actually wins matches.</p>
+      <p class="project-desc">Tracked over 10 KPIs across 145 datasets to figure out what actually wins matches, allowing coaches to build strategies based on data, not just gut feeling.</p>
       <a href="/projects/ipl-analysis/" class="project-link">Read Case Study &rarr;</a>
-    </div>
-  </div>
-
-  <div class="project-showcase reveal">
-    <a href="/projects/football-striker/" class="project-visual">
-      <div class="card-slider">
-        <img src="/docs/assets/FootballStriker.png" alt="Striker Dashboard">
-      </div>
-    </a>
-    <div class="project-info">
-      <div class="project-meta">Machine Learning &middot; Python</div>
-      <h3 class="project-name">Football Striker Segmentation</h3>
-      <p class="project-desc">Clustered 500 elite players using K-Means to find out what really drives goal-scoring.</p>
-      <a href="/projects/football-striker/" class="project-link">Read Case Study &rarr;</a>
     </div>
   </div>
   

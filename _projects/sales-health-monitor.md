@@ -8,7 +8,7 @@ header: false
 share: false
 ---
 
-<a href="/projects/" class="side-nav-btn prev-btn-floating" title="Project Archive"><i class="fa-solid fa-chevron-left"></i></a>
+<a href="/projects/ravenstack-churn-engine/" class="side-nav-btn prev-btn-floating" title="Previous Project"><i class="fa-solid fa-chevron-left"></i></a>
 <a href="/projects/ipl-analysis/" class="side-nav-btn next-btn-floating" title="Next Project"><i class="fa-solid fa-chevron-right"></i></a>
 
 <div class="case-study-container reveal active">
@@ -113,7 +113,7 @@ share: false
   </div>
 
   <div class="projects-page-nav" markdown="0">
-    <a href="/projects/" class="nav-btn prev-btn"><span class="nav-arrow">&larr;</span> Archive</a>
+    <a href="/projects/ravenstack-churn-engine/" class="nav-btn prev-btn"><span class="nav-arrow">&larr;</span> Prev: Churn Engine</a>
     <a href="/projects/ipl-analysis/" class="nav-btn next-btn">Next: Forecasting Model <span class="nav-arrow">&rarr;</span></a>
   </div>
 

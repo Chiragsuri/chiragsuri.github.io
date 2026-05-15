@@ -22,6 +22,31 @@ header: false
     <button class="filter-tab" data-filter="ml">Machine Learning</button>
   </div>
 
+<div class="project-showcase reveal" data-category="ml">
+    <a href="/projects/ravenstack-churn-engine/" class="project-visual">
+      <div class="card-slider">
+        <img src="/docs/assets/RavenStack_Page1.png" alt="Executive Summary">
+        <img src="/docs/assets/RavenStack_Page2.png" alt="CSM Action Board">
+        <img src="/docs/assets/RavenStack_Page3.png" alt="Action Board Filtered">
+      </div>
+    </a>
+    <div class="project-info">
+      <div class="project-meta">Machine Learning · Data Engineering</div>
+      <h2 class="project-name">Customer Churn Decision Engine</h2>
+      <p class="project-desc">Identified $870K in at-risk MRR by building a predictive XGBoost pipeline on top of Google BigQuery. I integrated SHAP values directly into a live Power BI dashboard so Customer Success managers know exactly what behavioral drivers are pushing an account to cancel.</p>
+      <div class="cs-tech-tags" style="margin-bottom: 2rem;">
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Data Warehousing & SQL">BigQuery</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Classification Model">XGBoost</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Model Explainability">SHAP</span>
+        <span class="cs-tech-tag has-tooltip" data-tooltip="Live BI Connection">Power BI</span>
+      </div>
+      <div class="project-actions">
+        <a href="/projects/ravenstack-churn-engine/" class="project-link">Read Case Study →</a>
+        <a href="https://github.com/Chiragsuri/saas-churn-retention-engine" target="_blank" class="project-link-secondary">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
   <div class="project-showcase reveal" data-category="engineering">
     <a href="/projects/sales-health-monitor/" class="project-visual">
       <div class="card-slider">
