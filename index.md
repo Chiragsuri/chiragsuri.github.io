@@ -31,13 +31,18 @@ classes: wide
 
 <div class="metrics-bar reveal">
   <div class="metric">
-    <span class="m-val" data-target="40" data-suffix="%">0%</span>
-    <span class="m-label">Faster Data Retrieval</span>
+    <span class="m-val" data-target="870" data-suffix="K">0</span>
+    <span class="m-label">At-Risk MRR ($)</span>
   </div>
   <div class="m-divider"></div>
   <div class="metric">
     <span class="m-val" data-target="85" data-suffix="%">0%</span>
     <span class="m-label">False Alert Reduction</span>
+  </div>
+  <div class="m-divider"></div>
+  <div class="metric">
+    <span class="m-val" data-target="64" data-suffix="%">0%</span>
+    <span class="m-label">Predictive Recall</span>
   </div>
   <div class="m-divider"></div>
   <div class="metric">
@@ -48,7 +53,7 @@ classes: wide
 
 <div class="section">
   <h2 class="section-title reveal" style="margin-bottom: 1rem;">Core Expertise</h2>
-  <div class="expertise-section reveal">
+  < class="expertise-section reveal">
     
     <div class="expertise-row">
       <div class="expertise-title">
@@ -57,9 +62,9 @@ classes: wide
       </div>
       <div class="expertise-skills">
         <span class="expertise-pill">SQL & Optimization</span>
+        <span class="expertise-pill">Cloud Data Warehousing</span>
         <span class="expertise-pill">ETL Pipelines</span>
         <span class="expertise-pill">Star / Snowflake Schema</span>
-        <span class="expertise-pill">Quality Frameworks</span>
       </div>
     </div>
 
@@ -82,7 +87,7 @@ classes: wide
         <h3>Strategy & Modeling</h3>
       </div>
       <div class="expertise-skills">
-        <span class="expertise-pill">Predictive AI (Scikit-learn)</span>
+        <span class="expertise-pill">Predictive Modeling</span>
         <span class="expertise-pill">Hypothesis Testing</span>
         <span class="expertise-pill">KPI Development</span>
         <span class="expertise-pill">Cohort Analysis</span>

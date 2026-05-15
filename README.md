@@ -67,7 +67,15 @@ I pulled data on 500 professional footballers and ran it through Scikit-learn. A
 
 - **Tech Stack:** Python, Scikit-learn, K-Means Clustering
 
-### 5. [Geospatial House Sales Analysis](https://chiragsuri.github.io/projects/house-sales-analysis/)
+### 5. [Year-Over-Year Sales Analytics](https://chiragsuri.github.io/projects/sales-data-analysis/)
+
+> **Goal:** Map out YoY growth, customer purchasing habits, and regional trends.
+
+I generated synthetic retail data using Python to simulate a multi-year sales environment. I processed the data with Pandas and connected it to Power BI to build an interactive dashboard comparing 2023 against 2024 performance metrics.
+
+- **Tech Stack:** Python (Pandas, Faker), Power BI
+
+### 6. [Geospatial House Sales Analysis](https://chiragsuri.github.io/projects/house-sales-analysis/)
 
 > **Goal:** Create a visual tool for finding pricing trends without looking at a single spreadsheet.
 
