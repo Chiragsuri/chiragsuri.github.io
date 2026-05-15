@@ -8,14 +8,13 @@ _Building scalable data pipelines and actionable forecasting models to give lead
 
 ## Core Skills
 
-| Category                       | Technologies & Tools                                  |
-| :----------------------------- | :---------------------------------------------------- |
-| **Data Collection & Querying** | MySQL, Excel                                          |
-| **Data Cleaning & Validation** | Pandas, NumPy, Excel                                  |
-| **Analysis & Manipulation**    | Python, Jupyter Notebook, Pandas, NumPy               |
-| **Visualization**              | Tableau, Power BI, Matplotlib, Seaborn                |
-| **Machine Learning**           | Scikit-learn (sklearn)                                |
-| **Generative AI**              | AI Tools (Productivity, storytelling, rapid ideation) |
+| Category                           | Technologies & Tools                                       |
+| :--------------------------------- | :--------------------------------------------------------- |
+| **Data Warehousing & Engineering** | Google BigQuery, MySQL, Advanced SQL                       |
+| **Analysis & Manipulation**        | Python, Pandas, NumPy, Jupyter Notebook                    |
+| **Machine Learning**               | XGBoost, Scikit-learn, SHAP (Explainable AI)               |
+| **Business Intelligence & Viz**    | Power BI, DAX, Tableau, Matplotlib, Seaborn                |
+| **Generative AI**                  | AI Workflows (Productivity, rapid ideation, documentation) |
 
 ---
 

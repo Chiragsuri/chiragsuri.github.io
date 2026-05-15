@@ -31,18 +31,13 @@ classes: wide
 
 <div class="metrics-bar reveal">
   <div class="metric">
-    <span class="m-val" data-target="870" data-suffix="K">0</span>
-    <span class="m-label">At-Risk MRR ($)</span>
+    <span class="m-val" data-target="64" data-suffix="%">0%</span>
+    <span class="m-label">Predictive Recall</span>
   </div>
   <div class="m-divider"></div>
   <div class="metric">
     <span class="m-val" data-target="85" data-suffix="%">0%</span>
     <span class="m-label">False Alert Reduction</span>
-  </div>
-  <div class="m-divider"></div>
-  <div class="metric">
-    <span class="m-val" data-target="64" data-suffix="%">0%</span>
-    <span class="m-label">Predictive Recall</span>
   </div>
   <div class="m-divider"></div>
   <div class="metric">
@@ -53,7 +48,7 @@ classes: wide
 
 <div class="section">
   <h2 class="section-title reveal" style="margin-bottom: 1rem;">Core Expertise</h2>
-  < class="expertise-section reveal">
+  <div class="expertise-section reveal">
     
     <div class="expertise-row">
       <div class="expertise-title">
